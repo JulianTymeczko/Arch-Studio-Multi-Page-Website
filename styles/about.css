@@ -5,4 +5,16 @@
     --light-grey: hsl(225, 17%, 82%);
     --very-light-grey: hsl(230, 21%, 95%);
     --red-errors: hsl(0, 68%, 61%);
+
+    --heading-xl-font-size: 250px;
+    --heading-xl-line-spacing: 200px;
+    /* also make sure it is bold */
+
+    
+    --body-text-font-size: 18px;
+    --body-text-line-spacing: 24px;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
 }

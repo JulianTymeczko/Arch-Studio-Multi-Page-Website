@@ -5,8 +5,33 @@
     --light-grey: hsl(225, 17%, 82%);
     --very-light-grey: hsl(230, 21%, 95%);
     --red-errors: hsl(0, 68%, 61%);
+
+    --heading-xl-font-size: 250px;
+    --heading-xl-line-spacing: 200px;
+    /* also make sure it is bold */
+
+    --heading-l-font-size: 96px;
+    --heading-l-line-spacing: 80px;
+    /* also make sure it is bold */
+
+    --heading-med-font-size: 72px;
+    --heading-med-line-spacing: 64px;
+    /* also make sure it is bold */
+
+    --heading-sm-font-size: 32px;
+    --heading-sm-line-spacing: 40px;
+    /* also make sure it is bold */
+
+
+    --body-text-font-size: 18px;
+    --body-text-line-spacing: 24px;
+
+
+
 }
 
-
+body{
+    font-family: 'League Spartan', sans-serif;
+}
 
 
