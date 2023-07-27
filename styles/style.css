@@ -1,4 +1,4 @@
-:root{
+:root {
     --very-dark-blue: hsl(225, 13%, 12%);
     --dark-grey: hsl(226, 6%, 40%);
     --medium-gray: hsl(223, 7%, 53%);
@@ -29,29 +29,33 @@
     --left-and-right-body-gutter: 20%;
 
 }
-a{
+
+a {
     text-decoration: none;
 }
-body{
+
+body {
     font-family: 'League Spartan', sans-serif;
 }
 
 
 
 /* this is the top of the page ---------------------------------------------------------------------------------- */
-nav{
+nav {
     position: relative;
-   padding-left: var(--left-and-right-body-gutter);
+    padding-left: var(--left-and-right-body-gutter);
     margin: 100px 0px;
     display: flex;
     flex-direction: row;
     gap: 45px;
-   align-items: center;
+    align-items: center;
 }
-nav img{
-   margin-right: 50px
+
+nav img {
+    margin-right: 50px
 }
-nav a{
+
+nav a {
     font-size: var(--body-text-font-size);
     color: var(--medium-gray);
     letter-spacing: 1.5px;
@@ -59,30 +63,32 @@ nav a{
     font-weight: bold;
 }
 
-.sideways-title{
-    
-   left:0px;
+.sideways-title {
 
-   bottom: -50px;
-    transform: rotate(90deg); 
- 
-   position: absolute;
-   display: flex;
-   flex-direction: row;
-  align-items: center;
-  width: max-content;
- 
-   
+    left: 0px;
+
+    bottom: -50px;
+    transform: rotate(90deg);
+
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: max-content;
+
+
 }
-.sideways-title h1{
+
+.sideways-title h1 {
     color: var(--light-grey);
     font-size: var(--heading-sm-font-size);
     letter-spacing: 25px;
     margin-left: 50px;
     font-weight: 300;
 }
-.straight-line{
-   
+
+.straight-line {
+
     width: 120px;
     height: 1px;
     background-color: var(--light-grey);
@@ -93,7 +99,7 @@ nav a{
 /* this is the header section ----------------------------------------------------------------------- */
 
 
-header{
+header {
     background-image: url(../assets/home/desktop/image-hero-paramour.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -104,43 +110,41 @@ header{
     padding: 200px;
     position: relative;
 }
-.header-top-div{
+
+.header-top-div {
     height: 100%;
 }
-header div h1{
+
+header div h1 {
     font-size: var(--heading-l-font-size);
     color: var(--very-light-grey);
 }
 
-header div p{
+header div p {
     font-size: var(--body-text-font-size);
-    color:var(--very-light-grey);
+    color: var(--very-light-grey);
     line-height: var(--body-text-line-spacing);
     margin-bottom: 60px;
 }
 
-header div a{
+header div a {
     color: var(--very-light-grey);
     background-color: var(--very-dark-blue);
     font-weight: bold;
     padding: 35px;
     letter-spacing: 1px;
 }
-header div a img{
-     
-  
 
-  
-}
+header div a img {}
 
-.header-bottom-div{
+.header-bottom-div {
     position: absolute;
     bottom: 0px;
     left: 0px;
     background-color: var(--very-dark-blue);
 }
 
-.header-bottom-div button{
+.header-bottom-div button {
     color: var(--very-light-grey);
     background-color: var(--very-dark-blue);
     font-weight: bold;
@@ -154,40 +158,44 @@ header div a img{
 
 /* this is the main part -------------------------------------------------------------- */
 
-main{
+main {
     padding-left: var(--left-and-right-body-gutter);
     padding-right: var(--left-and-right-body-gutter);
     position: relative;
 }
 
-#main-welcome-h1{
+#main-welcome-h1 {
     font-size: var(--heading-xl-font-size);
     color: var(--very-light-grey);
     position: absolute;
     top: 0px;
-    
+
 }
 
-#welcome-section{
+#welcome-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 100px;
 }
-.welcome-section-bottom-div{
+
+.welcome-section-bottom-div {
     margin-top: 110px;
 }
-.welcome-section-top-div{
+
+.welcome-section-top-div {
     margin-top: 190px;
     padding-left: 180px;
 }
-#welcome-section h1{
+
+#welcome-section h1 {
     font-size: var(--heading-med-font-size);
     line-height: var(--heading-med-line-spacing);
     color: var(--very-dark-blue);
     margin-bottom: 40px;
 }
-#welcome-section p{
+
+#welcome-section p {
     font-size: var(--body-text-font-size);
     line-height: var(--body-text-line-spacing);
     color: var(--medium-gray);
@@ -195,38 +203,141 @@ main{
 }
 
 
-#about-us-section{
+
+
+
+
+
+
+
+#about-us-section {
     background-image: url(../assets/home/desktop/image-small-team.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
-   padding-left: 200px;
-   padding-top: 160px;
+    padding-left: 200px;
+    padding-top: 160px;
+    margin-bottom: 100px;
 
 }
 
 
 
-#about-us-section h1{
+#about-us-section h1 {
     font-size: var(--heading-med-font-size);
     line-height: var(--heading-med-line-spacing);
     color: var(--very-light-grey);
     margin-bottom: 70px;
 
 }
-#about-us-section a{
-    
+
+#about-us-section a {
+
     color: var(--very-light-grey);
     background-color: var(--very-dark-blue);
     font-weight: bold;
     padding: 35px;
     letter-spacing: 1px;
-  
-}
-#about-us-section a img{
-     
- 
+
 }
 
+#about-us-section a img {}
 
 
+
+
+
+
+
+
+.featured-section-top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+}
+
+.featured-section-top-section h1 {
+    font-size: var(--heading-med-font-size);
+    color: var(--very-dark-blue);
+}
+
+.featured-section-top-section a {
+
+    color: var(--very-light-grey);
+    background-color: var(--very-dark-blue);
+    font-weight: bold;
+    padding: 35px;
+    letter-spacing: 1px;
+}
+
+.featured-section-top-section a img {}
+
+
+
+
+
+
+.featured-section-bottom-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.featured-section-bottom-section-div{
+    width: 31.5%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Project-Del-Sol{
+    background-image: url(../assets/portfolio/desktop/image-del-sol.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.B-Tower{
+    background-image: url(../assets/portfolio/desktop/image-228b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Le-Prototype{
+    background-image: url(../assets/portfolio/desktop/image-prototype.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.featured-section-bottom-section h1 {
+    font-size: var(--heading-xl-font-size);
+    color: var(--light-grey);
+    position: absolute;
+    right: -15px;
+    top: 25px;
+}
+
+.featured-section-bottom-section-div div{
+    padding-top: 400px;
+    padding-left: 50px;
+}
+.featured-section-bottom-section h2 {
+    font-size: var(--heading-sm-font-size);
+    color: var(--very-light-grey);
+}
+
+.featured-section-bottom-section a {
+    font-size: var(--body-text-font-size);
+    color: var(--light-grey);
+}
+
+
+
+
+
+
+
+
+
+/* this is the footer section ------------------------------------------------------------------------- */
