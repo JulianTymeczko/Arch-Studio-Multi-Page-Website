@@ -35,3 +35,24 @@ body{
 }
 
 
+
+/* this is the top of the page ---------------------------------------------------------------------------------- */
+
+.sideways-title{
+    color: var(--light-grey);
+    font-size: var(--heading-sm-font-size);
+    font-weight: bold;
+   transform: rotate(90deg);
+   display: inline-block;
+   
+   margin-left: 80px;
+   margin-top: 60px;
+}
+.sideways-title::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    padding-right: 40px;
+    background-color: var(--light-grey);
+    margin-top: 60px;
+}
