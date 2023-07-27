@@ -15,6 +15,9 @@
     --body-text-line-spacing: 24px;
 }
 
+a{
+    text-decoration: none;
+}
 body{
     font-family: 'League Spartan', sans-serif;
 }

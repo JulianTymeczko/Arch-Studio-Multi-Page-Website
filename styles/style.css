@@ -26,10 +26,12 @@
     --body-text-font-size: 18px;
     --body-text-line-spacing: 24px;
 
-    --overall-padding-left: 20%;
+    --left-and-right-body-gutter: 20%;
 
 }
-
+a{
+    text-decoration: none;
+}
 body{
     font-family: 'League Spartan', sans-serif;
 }
@@ -39,7 +41,7 @@ body{
 /* this is the top of the page ---------------------------------------------------------------------------------- */
 nav{
     position: relative;
-   padding-left: var(--overall-padding-left);
+   padding-left: var(--left-and-right-body-gutter);
     margin: 100px 0px;
     display: flex;
     flex-direction: row;
@@ -89,5 +91,142 @@ nav a{
 
 
 /* this is the header section ----------------------------------------------------------------------- */
+
+
+header{
+    background-image: url(../assets/home/desktop/image-hero-paramour.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    margin-left: var(--left-and-right-body-gutter);
+    margin-right: var(--left-and-right-body-gutter);
+    height: 900px;
+    padding: 200px;
+    position: relative;
+}
+.header-top-div{
+    height: 100%;
+}
+header div h1{
+    font-size: var(--heading-l-font-size);
+    color: var(--very-light-grey);
+}
+
+header div p{
+    font-size: var(--body-text-font-size);
+    color:var(--very-light-grey);
+    line-height: var(--body-text-line-spacing);
+    margin-bottom: 60px;
+}
+
+header div a{
+    color: var(--very-light-grey);
+    background-color: var(--very-dark-blue);
+    font-weight: bold;
+    padding: 35px;
+    letter-spacing: 1px;
+}
+header div a img{
+     
+  
+
+  
+}
+
+.header-bottom-div{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: var(--very-dark-blue);
+}
+
+.header-bottom-div button{
+    color: var(--very-light-grey);
+    background-color: var(--very-dark-blue);
+    font-weight: bold;
+    padding: 35px;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+
+}
+
+
+/* this is the main part -------------------------------------------------------------- */
+
+main{
+    padding-left: var(--left-and-right-body-gutter);
+    padding-right: var(--left-and-right-body-gutter);
+    position: relative;
+}
+
+#main-welcome-h1{
+    font-size: var(--heading-xl-font-size);
+    color: var(--very-light-grey);
+    position: absolute;
+    top: 0px;
+    
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.welcome-section-bottom-div{
+    margin-top: 110px;
+}
+.welcome-section-top-div{
+    margin-top: 190px;
+    padding-left: 180px;
+}
+#welcome-section h1{
+    font-size: var(--heading-med-font-size);
+    line-height: var(--heading-med-line-spacing);
+    color: var(--very-dark-blue);
+    margin-bottom: 40px;
+}
+#welcome-section p{
+    font-size: var(--body-text-font-size);
+    line-height: var(--body-text-line-spacing);
+    color: var(--medium-gray);
+    width: 70%;
+}
+
+
+#about-us-section{
+    background-image: url(../assets/home/desktop/image-small-team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+   padding-left: 200px;
+   padding-top: 160px;
+
+}
+
+
+
+#about-us-section h1{
+    font-size: var(--heading-med-font-size);
+    line-height: var(--heading-med-line-spacing);
+    color: var(--very-light-grey);
+    margin-bottom: 70px;
+
+}
+#about-us-section a{
+    
+    color: var(--very-light-grey);
+    background-color: var(--very-dark-blue);
+    font-weight: bold;
+    padding: 35px;
+    letter-spacing: 1px;
+  
+}
+#about-us-section a img{
+     
+ 
+}
+
 
 
