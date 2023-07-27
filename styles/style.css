@@ -26,7 +26,7 @@
     --body-text-font-size: 18px;
     --body-text-line-spacing: 24px;
 
-
+    --overall-padding-left: 20%;
 
 }
 
@@ -37,22 +37,57 @@ body{
 
 
 /* this is the top of the page ---------------------------------------------------------------------------------- */
+nav{
+    position: relative;
+   padding-left: var(--overall-padding-left);
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+   align-items: center;
+}
+nav img{
+   margin-right: 50px
+}
+nav a{
+    font-size: var(--body-text-font-size);
+    color: var(--medium-gray);
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 .sideways-title{
+    
+   left:0px;
+
+   bottom: -50px;
+    transform: rotate(90deg); 
+ 
+   position: absolute;
+   display: flex;
+   flex-direction: row;
+  align-items: center;
+  width: max-content;
+ 
+   
+}
+.sideways-title h1{
     color: var(--light-grey);
     font-size: var(--heading-sm-font-size);
-    font-weight: bold;
-   transform: rotate(90deg);
-   display: inline-block;
+    letter-spacing: 25px;
+    margin-left: 50px;
+    font-weight: 300;
+}
+.straight-line{
    
-   margin-left: 80px;
-   margin-top: 60px;
-}
-.sideways-title::before{
-    content: "";
-    width: 10px;
-    height: 10px;
-    padding-right: 40px;
+    width: 120px;
+    height: 1px;
     background-color: var(--light-grey);
-    margin-top: 60px;
 }
+
+
+
+/* this is the header section ----------------------------------------------------------------------- */
+
+
