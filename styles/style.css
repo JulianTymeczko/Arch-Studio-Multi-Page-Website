@@ -26,7 +26,7 @@
     --body-text-font-size: 18px;
     --body-text-line-spacing: 24px;
 
-    --left-and-right-body-gutter: 20%;
+    --left-and-right-body-gutter: 15%;
 
 }
 
@@ -100,7 +100,7 @@ nav a {
 
 
 header {
-    background-image: url(../assets/home/desktop/image-hero-paramour.jpg);
+    background-image: url(../assets/home/desktop/dark-paramour-tower.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 100px;
@@ -109,6 +109,8 @@ header {
     height: 900px;
     padding: 200px;
     position: relative;
+
+   
 }
 
 .header-top-div {
@@ -118,6 +120,7 @@ header {
 header div h1 {
     font-size: var(--heading-l-font-size);
     color: var(--very-light-grey);
+   
 }
 
 header div p {
@@ -217,14 +220,14 @@ main {
 
 
 #about-us-section {
-    background-image: url(../assets/home/desktop/image-small-team.jpg);
+    background-image: url(../assets/home/desktop/dark-image-small-team.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
     padding-left: 200px;
     padding-top: 160px;
     margin-bottom: 100px;
-
+    
 }
 
 
@@ -316,19 +319,19 @@ main {
 }
 
 .Project-Del-Sol {
-    background-image: url(../assets/portfolio/desktop/image-del-sol.jpg);
+    background-image: url(../assets/portfolio/desktop/dark-image-del-sol-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .B-Tower {
-    background-image: url(../assets/portfolio/desktop/image-228b.jpg);
+    background-image: url(../assets/portfolio/desktop/dark-image-228b-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .Le-Prototype {
-    background-image: url(../assets/portfolio/desktop/image-prototype.jpg);
+    background-image: url(../assets/portfolio/desktop/dark-image-prototype-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -351,6 +354,7 @@ main {
 .featured-section-bottom-section h2 {
     font-size: var(--heading-sm-font-size);
     color: var(--very-light-grey);
+    margin-bottom: 5px;
 }
 
 .featured-section-bottom-section a {
@@ -423,4 +427,19 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+
+
+
+
+
+
+
+/* 
+this is the start of the media queries ------------------------------------------------------------------------ */
+
+
+@media screen and (max-width: 1000px) {
+    
 }
