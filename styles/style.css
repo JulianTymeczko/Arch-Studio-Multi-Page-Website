@@ -250,6 +250,12 @@ main {
 
 
 
+#featured-section {
+    margin-bottom: 100px;
+}
+
+
+
 .featured-section-top-section {
     display: flex;
     flex-direction: row;
@@ -284,25 +290,27 @@ main {
     flex-direction: row;
     justify-content: space-between;
 }
-.featured-section-bottom-section-div{
+
+.featured-section-bottom-section-div {
     width: 31.5%;
     height: 500px;
     position: relative;
     overflow: hidden;
 }
 
-.Project-Del-Sol{
+.Project-Del-Sol {
     background-image: url(../assets/portfolio/desktop/image-del-sol.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.B-Tower{
+
+.B-Tower {
     background-image: url(../assets/portfolio/desktop/image-228b.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.Le-Prototype{
+.Le-Prototype {
     background-image: url(../assets/portfolio/desktop/image-prototype.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -318,10 +326,11 @@ main {
     top: 25px;
 }
 
-.featured-section-bottom-section-div div{
+.featured-section-bottom-section-div div {
     padding-top: 400px;
     padding-left: 50px;
 }
+
 .featured-section-bottom-section h2 {
     font-size: var(--heading-sm-font-size);
     color: var(--very-light-grey);
@@ -338,6 +347,64 @@ main {
 
 
 
-
-
 /* this is the footer section ------------------------------------------------------------------------- */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: var(--left-and-right-body-gutter);
+    height: 200px;
+    padding-right: var(--left-and-right-body-gutter);
+
+}
+
+.footer-logo-div {
+    background-color: var(--very-dark-blue);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding-left: 60px;
+
+   padding-right: 60px;
+
+}
+
+.footer-logo-div img {
+    background-color: var(--very-light-grey);
+    
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--very-light-grey);
+    height: 100%;
+    flex: 1;
+    padding-left: 80px;
+    gap: 60px;
+  
+
+}
+
+.footer-nav a {
+    font-size: var(--body-text-font-size);
+    color: var(--medium-gray);
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.footer-see-portfolio {
+    color: var(--very-light-grey) !important;
+    background-color: var(--very-dark-blue);
+    font-weight: bold;
+    padding: 35px;
+    letter-spacing: 1px;
+    margin-left: auto;
+}
+
+.footer-see-portfolio img {}
