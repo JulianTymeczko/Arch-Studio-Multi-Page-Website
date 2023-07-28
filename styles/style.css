@@ -128,14 +128,20 @@ header div p {
 }
 
 header div a {
-    color: var(--very-light-grey);
+
+    color: var(--very-light-grey) !important;
     background-color: var(--very-dark-blue);
     font-weight: bold;
     padding: 35px;
     letter-spacing: 1px;
+    gap: 25px;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-header div a img {}
+
 
 .header-bottom-div {
     position: absolute;
@@ -233,15 +239,20 @@ main {
 
 #about-us-section a {
 
-    color: var(--very-light-grey);
+
+    color: var(--very-light-grey) !important;
     background-color: var(--very-dark-blue);
     font-weight: bold;
     padding: 35px;
     letter-spacing: 1px;
-
+    gap: 25px;
+    width: max-content ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-#about-us-section a img {}
+
 
 
 
@@ -271,14 +282,20 @@ main {
 
 .featured-section-top-section a {
 
-    color: var(--very-light-grey);
+
+    color: var(--very-light-grey) !important;
     background-color: var(--very-dark-blue);
     font-weight: bold;
     padding: 35px;
     letter-spacing: 1px;
+    gap: 25px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.featured-section-top-section a img {}
+
 
 
 
@@ -365,16 +382,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-   padding-left: 60px;
+    padding-left: 60px;
 
-   padding-right: 60px;
+    padding-right: 60px;
 
 }
 
-.footer-logo-div img {
-    background-color: var(--very-light-grey);
-    
-}
+
 
 .footer-nav {
     display: flex;
@@ -385,7 +399,7 @@ footer {
     flex: 1;
     padding-left: 80px;
     gap: 60px;
-  
+
 
 }
 
@@ -404,7 +418,9 @@ footer {
     font-weight: bold;
     padding: 35px;
     letter-spacing: 1px;
+    gap: 25px;
     margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-
-.footer-see-portfolio img {}
