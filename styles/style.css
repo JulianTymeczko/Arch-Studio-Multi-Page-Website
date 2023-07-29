@@ -302,7 +302,7 @@ main {
 }
 
 .mobile-see-all-anchor {
-    display: none;
+    
     color: var(--very-light-grey) !important;
     background-color: var(--very-dark-blue);
     font-weight: bold;
@@ -310,9 +310,10 @@ main {
     letter-spacing: 1px;
     gap: 25px;
 
-    display: flex;
+    
     flex-direction: row;
     align-items: center;
+    display: none;
 }
 
 
@@ -468,7 +469,7 @@ this is the start of the media queries -----------------------------------------
         
 
         --heading-med-font-size: 50px;
-        --heading-med-line-spacing: 42px;
+        --heading-med-line-spacing: 50px;
        
 
         --heading-sm-font-size: 32px;
@@ -510,6 +511,7 @@ this is the start of the media queries -----------------------------------------
     header {
         padding: 0 var(--mobile-left-and-right-body-gutter);
         height: 600px;
+        background-image: url(../assets/home/mobile/dark-image-hero-paramour.jpg)
         
     }
 
@@ -560,7 +562,11 @@ this is the start of the media queries -----------------------------------------
 
 
     #about-us-section {
-        padding: 0;
+        padding: 140px 0 0 45px;
+        background-image: url(../assets/home/mobile/dark-image-small-team-mobile.jpg);
+    }
+    #about-us-section div h1{
+        margin-bottom: 35px;
     }
 
 
@@ -585,6 +591,16 @@ this is the start of the media queries -----------------------------------------
         height: 250px;
         
     }
+    .Project-Del-Sol{
+        background-image: url(../assets/portfolio/mobile/mobile-dark-image-del-sol.jpg);
+    }
+    .B-Tower{
+        background-image: url(../assets/portfolio/mobile/mobile-dark-image-228b.jpg);
+
+    }
+    .Le-Prototype{
+        background-image: url(../assets/portfolio/mobile/mobile-dark-image-prototype.jpg);
+    }
     .featured-section-bottom-section-div div{
         padding-top: 160px;
         padding-left: 30px;
@@ -593,6 +609,7 @@ this is the start of the media queries -----------------------------------------
         display: none;
     }
     .mobile-see-all-anchor{
+        display: flex;
         justify-content: center;
     }
 
