@@ -65,7 +65,9 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
-
+nav a:hover{
+    color: var(--very-dark-blue);
+}
 .sideways-title {
 
     left: 0px;
@@ -146,7 +148,9 @@ header div a {
     flex-direction: row;
     align-items: center;
 }
-
+header div a:hover{
+    background-color: var(--medium-gray);
+}
 
 
 .header-bottom-div {
@@ -173,8 +177,11 @@ header div a {
     background-color: var(--very-dark-blue);
     color: var(--very-light-grey);
 }
+
 .header-bottom-div button:hover{
     cursor: pointer;
+    background-color: var(--very-light-grey);
+    
 }
 
 
@@ -267,6 +274,9 @@ main {
     flex-direction: row;
     align-items: center;
 }
+#about-us-section a:hover{
+    background-color: var(--medium-gray);
+}
 
 
 
@@ -309,6 +319,9 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+.featured-section-top-section a:hover{
+    background-color: var(--medium-gray);
 }
 
 .mobile-see-all-anchor {
@@ -388,6 +401,10 @@ main {
     color: var(--light-grey);
 }
 
+.featured-section-bottom-section a:hover{
+    text-decoration: underline;
+}
+
 
 
 
@@ -429,6 +446,7 @@ footer {
     flex: 1;
     padding-left: 80px;
     gap: 60px;
+    margin-right: 130px;
 
 
 }
@@ -440,7 +458,9 @@ footer {
     text-decoration: none;
     font-weight: bold;
 }
-
+.footer-nav a:hover{
+    color: var(--very-dark-blue);
+}
 
 .footer-see-portfolio {
     color: var(--very-light-grey) !important;
@@ -453,6 +473,10 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    transform: translateX(130px);
+}
+.footer-see-portfolio:hover{
+    background-color: var(--medium-gray);
 }
 
 
@@ -521,7 +545,7 @@ this is the start of the media queries -----------------------------------------
     header {
         padding: 0 var(--mobile-left-and-right-body-gutter);
         height: 600px;
-        background-image: url(../assets/home/mobile/dark-image-hero-paramour.jpg)
+        background-image: url(../assets/home/mobile/dark-image-hero-paramour.jpg);
         
     }
 
@@ -654,5 +678,6 @@ this is the start of the media queries -----------------------------------------
 
     .footer-see-portfolio {
         margin-left: 0px;
+        transform: none;
     }
 }
