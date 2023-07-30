@@ -67,3 +67,21 @@ buttonFour.addEventListener("click", function () {
     headerP.innerHTML = " Trinity Bank challenged us to make a concept for a 84 story <br> building located in the middle of a city with a high <br> earthquake frequency. For this project we used curves to <br> blend design and stability to meet our objectives."
     header.setAttribute("style", "background-image: url(./assets/home/desktop/dark-image-hero-trinity.jpg)")
 })
+
+
+
+
+
+// this is for mobile navigation ==========================================================
+
+let mobileNavigationList = document.querySelector(".mobile-navigation-list")
+let mobileNavButton = document.getElementById("mobile-hamburger-button")
+mobileNavButton.addEventListener("click", function () {
+    if (!mobileNavigationList.style.display || mobileNavigationList.style.display == "flex"){
+        mobileNavigationList.style.display = "none"
+    }
+   
+    else if (mobileNavigationList.style.display == "none"){
+        mobileNavigationList.style.display = "flex"
+    }
+})
