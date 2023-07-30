@@ -57,6 +57,9 @@ nav img {
 #mobile-hamburger-button{
     display: none;
 }
+.mobile-navigation-list{
+    display: none;
+}
 
 nav a {
     font-size: var(--body-text-font-size);
@@ -72,15 +75,16 @@ nav a:hover{
 
     left: 0px;
 
-    bottom: -50px;
+    bottom: -60px;
     transform: rotate(90deg);
 
     position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: max-content;
-
+    width: 380px;
+    justify-content: space-between;
+   
 
 }
 
@@ -88,13 +92,13 @@ nav a:hover{
     color: var(--light-grey);
     font-size: var(--heading-sm-font-size);
     letter-spacing: 25px;
-    margin-left: 60px;
+  
     font-weight: 300;
 }
 
 .straight-line {
 
-    width: 120px;
+    width: 140px;
     height: 1px;
     background-color: var(--light-grey);
 }
@@ -531,7 +535,30 @@ this is the start of the media queries -----------------------------------------
         border: none;
         background-color: white;
     }
-
+    .mobile-navigation-list{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--very-light-grey);
+        position: absolute;
+        top: 0px;
+        gap: 25px;
+        --left-pixel-amount: 30px;
+        left: var(--left-pixel-amount);
+        width: calc(100% - var(--left-pixel-amount));
+        padding-left: 45px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        
+     
+        
+    }
+    .mobile-navigation-list a{
+        padding: 0;
+        background-color: var(--very-light-grey);
+        font-size: var(--heading-sm-font-size);
+        color: var(--very-dark-blue) !important;
+      
+    }
     nav a {
         display: none;
     }
@@ -612,6 +639,7 @@ this is the start of the media queries -----------------------------------------
 
     #featured-section{
         padding: 0px var(--mobile-left-and-right-body-gutter);
+        margin-bottom: 170px;
     }
     .featured-section-top-section a {
         display: none;
@@ -664,13 +692,15 @@ this is the start of the media queries -----------------------------------------
 
 
     .footer-logo-div {
-        margin-bottom: 60px;
-        padding: 40px 40px 40px 40px;
+        margin-bottom: 0px;
+        padding: 50px 30px 50px 30px;
+        transform: translateY(-70px);
     }
 
     .footer-nav {
         flex-direction: column;
         padding-left: 0;
+        margin-right: 0px;
 
     }
 
