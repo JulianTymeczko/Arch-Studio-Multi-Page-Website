@@ -536,7 +536,7 @@ this is the start of the media queries -----------------------------------------
         background-color: white;
     }
     .mobile-navigation-list{
-        display: flex;
+        display: none;
         flex-direction: column;
         background-color: var(--very-light-grey);
         position: absolute;

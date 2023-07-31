@@ -1,26 +1,27 @@
 let buttonOne = document.getElementById("button-one")
-let buttonTwo =  document.getElementById("button-two")
-let buttonThree =  document.getElementById("button-three")
-let buttonFour =  document.getElementById("button-four")
+let buttonTwo = document.getElementById("button-two")
+let buttonThree = document.getElementById("button-three")
+let buttonFour = document.getElementById("button-four")
 let headerH1 = document.getElementById("header-h1")
 let headerP = document.getElementById("header-p")
 let header = document.querySelector("header")
+let headerA = document.querySelector(".header-top-div a")
 let everyButton = document.querySelectorAll(".header-bottom-div button")
-for (x of everyButton){
-   x.addEventListener("mouseover", function () {
-    if (this.style.backgroundColor == 'rgb(27, 29, 35)') {
-        this.style.backgroundColor = "rgb(27, 29, 35)"
-    }
-    else if (this.style.backgroundColor == 'white'){
-        this.style.backgroundColor = 'hsl(230, 21%, 95%)'
-    }
-   })
-   x.addEventListener("mouseout", function () {
-    if (this.style.backgroundColor == 'rgb(240, 240, 245)'){
-        this.style.backgroundColor = 'white'
-    }
+for (x of everyButton) {
+    x.addEventListener("mouseover", function () {
+        if (this.style.backgroundColor == 'rgb(27, 29, 35)') {
+            this.style.backgroundColor = "rgb(27, 29, 35)"
+        }
+        else if (this.style.backgroundColor == 'white') {
+            this.style.backgroundColor = 'hsl(230, 21%, 95%)'
+        }
+    })
+    x.addEventListener("mouseout", function () {
+        if (this.style.backgroundColor == 'rgb(240, 240, 245)') {
+            this.style.backgroundColor = 'white'
+        }
 
-   })
+    })
 }
 buttonOne.addEventListener("click", function () {
     this.setAttribute("style", "background-color: hsl(225, 13%, 12%); color: hsl(230, 21%, 95%)")
@@ -77,11 +78,19 @@ buttonFour.addEventListener("click", function () {
 let mobileNavigationList = document.querySelector(".mobile-navigation-list")
 let mobileNavButton = document.getElementById("mobile-hamburger-button")
 mobileNavButton.addEventListener("click", function () {
-    if (!mobileNavigationList.style.display || mobileNavigationList.style.display == "flex"){
-        mobileNavigationList.style.display = "none"
-    }
-   
-    else if (mobileNavigationList.style.display == "none"){
+
+    if (mobileNavigationList.style.display == "none" || !mobileNavigationList.style.display) {
         mobileNavigationList.style.display = "flex"
+        header.setAttribute("style", "background-image: url(./assets/home/mobile/mobile-really-dark-image-hero-paramour.jpg)")
+        headerA.setAttribute("style", "filter: brightness(80%);")
+        headerP.setAttribute("style", "filter: brightness(80%);")
+        
     }
+    else if (mobileNavigationList.style.display == "flex") {
+        mobileNavigationList.style.display = "none"
+        header.setAttribute("style", "background-image: url(./assets/home/mobile/dark-image-hero-paramour.jpg)")
+        headerA.setAttribute("style", "filter: brightness(100%);")
+        headerP.setAttribute("style", "filter: brightness(100%);")
+    }
+
 })
