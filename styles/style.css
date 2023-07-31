@@ -494,7 +494,309 @@ footer {
 this is the start of the media queries ------------------------------------------------------------------------ */
 
 
-@media screen and (max-width: 1000px) {
+/* it goes from largest to smallest devices ============================================================================================= */
+
+/* this is for tablet =============================================================================================== */
+
+@media screen and (min-width: 1001px) and (max-width: 1550px) {
+    :root {
+        --very-dark-blue: hsl(225, 13%, 12%);
+        --dark-grey: hsl(226, 6%, 40%);
+        --medium-gray: hsl(223, 7%, 53%);
+        --light-grey: hsl(225, 17%, 82%);
+        --very-light-grey: hsl(230, 21%, 95%);
+        --red-errors: hsl(0, 68%, 61%);
+    
+        --heading-xl-font-size: 170px;
+        --heading-xl-line-spacing: 200px;
+        /* also make sure it is bold */
+    
+        --heading-l-font-size: 96px;
+        --heading-l-line-spacing: 80px;
+        /* also make sure it is bold */
+    
+        --heading-med-font-size: 72px;
+        --heading-med-line-spacing: 64px;
+        /* also make sure it is bold */
+    
+        --heading-sm-font-size: 32px;
+        --heading-sm-line-spacing: 40px;
+        /* also make sure it is bold */
+    
+    
+        --body-text-font-size: 18px;
+        --body-text-line-spacing: 24px;
+    
+        --left-and-right-body-gutter: 10%;
+        
+    
+    }
+    .sideways-title{
+
+    }
+
+
+
+    /* this is the footer section ================================================================ */
+    footer{
+        padding: 0;
+        height: 150px;
+        width: calc(100% - 200px);
+         position: relative; 
+    }
+    .footer-logo-div{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .footer-nav{
+        margin-right: 0;
+        padding-left: 45px;
+        
+    }
+    .footer-see-portfolio{
+        transform:none;
+        position: absolute;
+        right: -200px;
+        width: 340px;
+        gap: 0px;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+/* 
+this is between mobile and tablet ================================================================= */
+
+@media screen and (min-width:861px) and (max-width: 1000px) {
+   
+        :root {
+            --left-and-right-body-gutter: 0%;
+            --mobile-left-and-right-body-gutter: 8%;
+            --heading-xl-font-size: 250px;
+            --heading-xl-line-spacing: 200px;
+           
+        
+            --heading-l-font-size: 60px;
+            --heading-l-line-spacing: 44px;
+            
+    
+            --heading-med-font-size: 50px;
+            --heading-med-line-spacing: 50px;
+           
+    
+            --heading-sm-font-size: 32px;
+            --heading-sm-line-spacing: 40px;
+            
+    
+    
+            --body-text-font-size: 18px;
+            --body-text-line-spacing: 24px;
+        }
+    
+        .sideways-title {
+            display: none !important;
+        }
+        nav{
+            margin: 40px 0px;
+            padding: 0px var(--mobile-left-and-right-body-gutter);
+            justify-content: space-between;
+        }
+        nav img{
+            margin-right: 0px;
+        }
+        #mobile-hamburger-button{
+            display: inline-block;
+            border: none;
+            background-color: white;
+        }
+        #mobile-hamburger-button:hover{
+            cursor: pointer;
+        }
+        .mobile-navigation-list{
+            display: none;
+            flex-direction: column;
+            background-color: var(--very-light-grey);
+            position: absolute;
+            top: 0px;
+            gap: 25px;
+            --left-pixel-amount: 30px;
+            left: var(--left-pixel-amount);
+            width: calc(100% - var(--left-pixel-amount));
+            padding-left: 45px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            
+         
+            
+        }
+        .mobile-navigation-list a{
+            padding: 0;
+            background-color: var(--very-light-grey);
+            font-size: var(--heading-sm-font-size);
+            color: var(--very-dark-blue) !important;
+          
+        }
+        nav a {
+            display: none;
+        }
+    
+    
+    
+    
+    
+        /* header section ============================================== */
+    
+        header {
+            padding: 0 var(--mobile-left-and-right-body-gutter);
+            height: 600px;
+            background-image: url(../assets/home/mobile/dark-image-hero-paramour.jpg);
+            
+        }
+    
+        .header-top-div{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        header div h1{
+            margin-bottom: 15px;
+        }
+       header div p br{
+        display: none;
+       }
+    
+        .header-bottom-div button {
+            display: none;
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        /* main section ============================================================= */
+    
+        #main-welcome-h1 {
+            font-size: 0;
+            background-color: var(--light-grey);
+            width: 80px;
+            height: 1.5px;
+            position: static;
+            margin-bottom: 80px;
+            margin-left: var(--mobile-left-and-right-body-gutter)
+        }
+        #welcome-section{
+            padding: 0px var(--mobile-left-and-right-body-gutter);
+        }
+    
+        .welcome-section-top-div {
+            padding-left: 0;
+            margin-top: 0;
+        }
+        #welcome-section p {
+           width: 100%;
+        }
+        .welcome-section-bottom-div {
+            display: none;
+        }
+    
+    
+    
+    
+    
+        #about-us-section {
+            padding: 140px 0 0 45px;
+            background-image: url(../assets/home/mobile/dark-image-small-team-mobile.jpg);
+        }
+        #about-us-section div h1{
+            margin-bottom: 35px;
+        }
+    
+    
+    
+    
+    
+    
+        #featured-section{
+            padding: 0px var(--mobile-left-and-right-body-gutter);
+            margin-bottom: 170px;
+        }
+        .featured-section-top-section a {
+            display: none;
+        }
+    
+        .featured-section-bottom-section {
+            flex-direction: column;
+            gap: 30px;
+        }
+    
+        .featured-section-bottom-section-div {
+            width: 100%;
+            height: 250px;
+            
+        }
+        .Project-Del-Sol{
+            background-image: url(../assets/portfolio/mobile/mobile-dark-image-del-sol.jpg);
+        }
+        .B-Tower{
+            background-image: url(../assets/portfolio/mobile/mobile-dark-image-228b.jpg);
+    
+        }
+        .Le-Prototype{
+            background-image: url(../assets/portfolio/mobile/mobile-dark-image-prototype.jpg);
+        }
+        .featured-section-bottom-section-div div{
+            padding-top: 160px;
+            padding-left: 30px;
+        }
+        .featured-section-bottom-section div h1 {
+            display: none;
+        }
+        .mobile-see-all-anchor{
+            display: flex;
+            justify-content: center;
+        }
+    
+    
+    
+    
+    
+    
+        /* footer section ========================================================================================== */
+    
+        footer {
+            flex-direction: column;
+            background-color: var(--very-light-grey);
+            height: auto;
+        }
+    
+    
+        .footer-logo-div {
+            margin-bottom: 0px;
+            padding: 50px 30px 50px 30px;
+            transform: translateY(-70px);
+        }
+    
+        .footer-nav {
+            flex-direction: column;
+            padding-left: 0;
+            margin-right: 0px;
+    
+        }
+    
+    
+    
+        .footer-see-portfolio {
+            margin-left: 0px;
+            transform: none;
+        }
+    }
+
+/* this is the mobile view ================================================================================================== */
+@media screen and (max-width: 860px) {
     :root {
         --left-and-right-body-gutter: 0%;
         --mobile-left-and-right-body-gutter: 8%;
@@ -534,6 +836,9 @@ this is the start of the media queries -----------------------------------------
         display: inline-block;
         border: none;
         background-color: white;
+    }
+    #mobile-hamburger-button:hover{
+        cursor: pointer;
     }
     .mobile-navigation-list{
         display: none;
@@ -603,7 +908,13 @@ this is the start of the media queries -----------------------------------------
     /* main section ============================================================= */
 
     #main-welcome-h1 {
-        display: none;
+        font-size: 0;
+        background-color: var(--light-grey);
+        width: 80px;
+        height: 1.5px;
+        position: static;
+        margin-bottom: 80px;
+        margin-left: var(--mobile-left-and-right-body-gutter)
     }
     #welcome-section{
         padding: 0px var(--mobile-left-and-right-body-gutter);
