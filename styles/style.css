@@ -90,7 +90,7 @@ nav a:hover{
 
 .sideways-title h1 {
     color: var(--light-grey);
-    font-size: var(--heading-sm-font-size);
+    font-size: 25px;
     letter-spacing: 25px;
   
     font-weight: 300;
@@ -532,8 +532,43 @@ this is the start of the media queries -----------------------------------------
     
     }
     .sideways-title{
-
+        left: -110px;
+        width: 350px;
+        bottom: -40px;
+        gap: 85px;
     }
+    .sideways-title h1{
+        font-size: 20px;
+        letter-spacing: 20px;
+    }
+    .straight-line{
+       width: 180px;
+    }
+
+
+/* 
+    this is the main section ============================================================ */
+
+        .featured-section-bottom-section{
+            flex-direction: column;
+            gap: 30px;
+        }
+        .featured-section-bottom-section-div{
+            height: 240px;
+            width: 100%;
+        } 
+        .featured-section-bottom-section h1{
+            right: 25px;
+            opacity: .65;
+            font-size: 240px;
+            top: 10px;
+           
+        }
+        .featured-section-bottom-section-div div{
+            padding: 140px 0px 0px 40px
+        }
+
+
 
 
 
