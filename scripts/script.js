@@ -1,3 +1,27 @@
+// this is for mobile navigation =====================
+function disableScroll() {
+   
+    const scrollY = window.scrollY;
+
+   
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollY}px`;
+}
+
+function enableScroll() {
+    
+    const scrollY = parseInt(document.body.style.top || '0', 10);
+
+  
+    document.body.style.position = '';
+    document.body.style.top = '';
+    window.scrollTo(0, -scrollY);
+}
+
+
+
+
+
 let buttonOne = document.getElementById("button-one")
 let buttonTwo = document.getElementById("button-two")
 let buttonThree = document.getElementById("button-three")
@@ -84,6 +108,7 @@ mobileNavButton.addEventListener("click", function () {
         header.setAttribute("style", "background-image: url(./assets/home/mobile/mobile-really-dark-image-hero-paramour.jpg)")
         headerA.setAttribute("style", "filter: brightness(80%);")
         headerP.setAttribute("style", "filter: brightness(80%);")
+        disableScroll()
         
     }
     else if (mobileNavigationList.style.display == "flex") {
@@ -91,6 +116,8 @@ mobileNavButton.addEventListener("click", function () {
         header.setAttribute("style", "background-image: url(./assets/home/mobile/dark-image-hero-paramour.jpg)")
         headerA.setAttribute("style", "filter: brightness(100%);")
         headerP.setAttribute("style", "filter: brightness(100%);")
+        enableScroll()
     }
 
 })
+
