@@ -109,6 +109,7 @@ mobileNavButton.addEventListener("click", function () {
         headerA.setAttribute("style", "filter: brightness(80%);")
         headerP.setAttribute("style", "filter: brightness(80%);")
         disableScroll()
+
         
     }
     else if (mobileNavigationList.style.display == "flex") {
@@ -120,4 +121,26 @@ mobileNavButton.addEventListener("click", function () {
     }
 
 })
+
+
+window.addEventListener('resize', function() {
+    const windowWidth = window.innerWidth;
+    if (mobileNavigationList.style.display == "flex" && windowWidth >= 768){
+        mobileNavigationList.style.display = "none"
+        header.setAttribute("style", "background-image: url(./assets/home/tablet/dark-image-hero-paramour-tablet.jpg)")
+        headerA.setAttribute("style", "filter: brightness(100%);")
+        headerP.setAttribute("style", "filter: brightness(100%);")
+        enableScroll()
+    }
+    else if (windowWidth >= 768){
+        header.setAttribute("style", "background-image: url(./assets/home/tablet/dark-image-hero-paramour-tablet.jpg)")
+    }
+    if (windowWidth < 768 ){
+        header.setAttribute("style", "background-image: url(./assets/home/mobile/dark-image-hero-paramour.jpg)")
+    }
+    if (windowWidth >= 1440){
+        header.setAttribute("style", "background-image: url(./assets/home/desktop/dark-paramour-tower.jpg)")
+    }
+});
+
 
