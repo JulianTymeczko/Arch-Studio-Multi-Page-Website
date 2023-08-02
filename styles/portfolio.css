@@ -10,9 +10,23 @@
     --heading-xl-line-spacing: 200px;
     /* also make sure it is bold */
 
-    
+    --heading-l-font-size: 96px;
+    --heading-l-line-spacing: 80px;
+    /* also make sure it is bold */
+
+    --heading-med-font-size: 72px;
+    --heading-med-line-spacing: 64px;
+    /* also make sure it is bold */
+
+    --heading-sm-font-size: 32px;
+    --heading-sm-line-spacing: 40px;
+    /* also make sure it is bold */
+
+
     --body-text-font-size: 18px;
     --body-text-line-spacing: 24px;
+
+    --left-and-right-body-gutter: 15%;
 }
 a{
     text-decoration: none;
@@ -20,3 +34,361 @@ a{
 body{
     font-family: 'League Spartan', sans-serif;
 }
+
+
+
+/* this is the nav section ======================================================= */
+
+nav {
+    position: relative;
+    padding-left: var(--left-and-right-body-gutter);
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    align-items: center;
+}
+
+nav img {
+    margin-right: 50px
+}
+
+#mobile-hamburger-button {
+    display: none;
+}
+
+.mobile-navigation-list {
+    display: none;
+}
+
+nav a {
+    font-size: var(--body-text-font-size);
+    color: var(--medium-gray);
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--very-dark-blue);
+}
+
+.sideways-title {
+
+    left: 0px;
+
+    bottom: -60px;
+    transform: rotate(90deg);
+
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 380px;
+    justify-content: space-between;
+
+
+}
+
+.sideways-title h1 {
+    color: var(--light-grey);
+    font-size: 25px;
+    letter-spacing: 25px;
+
+    font-weight: 300;
+}
+
+.straight-line {
+
+    width: 140px;
+    height: 1px;
+    background-color: var(--light-grey);
+}
+
+
+
+
+/* this is the main section ==================================================== */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px; /* Adjust the gap size as per your preference */
+  }
+  
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none; /* Removes the default underline on anchor links */
+    color: #000; /* Sets the text color for the anchor links */
+  }
+
+  
+
+
+
+
+/* 
+this is the footer section ================================================================= */
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: var(--left-and-right-body-gutter);
+    height: 200px;
+    padding-right: var(--left-and-right-body-gutter);
+
+}
+
+.footer-logo-div {
+    background-color: var(--very-dark-blue);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 60px;
+
+    padding-right: 60px;
+
+}
+
+
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--very-light-grey);
+    height: 100%;
+    flex: 1;
+    padding-left: 80px;
+    gap: 60px;
+    margin-right: 130px;
+
+
+}
+
+.footer-nav a {
+    font-size: var(--body-text-font-size);
+    color: var(--medium-gray);
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    color: var(--very-dark-blue);
+}
+
+.footer-see-portfolio {
+    color: var(--very-light-grey) !important;
+    background-color: var(--very-dark-blue);
+    font-weight: bold;
+    padding: 35px;
+    letter-spacing: 1px;
+    gap: 25px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transform: translateX(130px);
+}
+
+.footer-see-portfolio:hover {
+    background-color: var(--medium-gray);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* this is the start of the media queries ======================================== */
+
+
+/* this is between tablet and desktop minor changes ======================================================== */
+@media screen and (min-width: 1439px) and (max-width: 1700px) {
+    .sideways-title{
+        left: -80px;
+    }
+}
+
+
+/* it goes from largest to smallest devices ============================================================================================= */
+
+/* this is for tablet =============================================================================================== */
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+
+
+    .sideways-title {
+        left: -130px;
+        width: 350px;
+        bottom: -40px;
+        gap: 85px;
+    }
+
+    .sideways-title h1 {
+        font-size: 20px;
+        letter-spacing: 20px;
+    }
+
+    .straight-line {
+        width: 180px;
+    }
+
+
+    /* this is the footer section ============================================= */
+
+    footer {
+        padding: 0;
+        height: 130px;
+       width: calc(100% - 200px);
+        position: relative;
+       
+    }
+
+    .footer-logo-div {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .footer-logo-div img{
+        width: 65px;
+    }
+    .footer-nav {
+        margin-right: 0;
+        padding-left: 45px;
+       gap: 45px;
+
+    }
+    .footer-nav a{
+        font-size: 16px;
+    }
+
+    .footer-see-portfolio {
+        transform: none;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        position: absolute;
+        right: -200px;
+        
+    }
+
+
+
+}
+
+
+
+
+/* this is the mobile view ================================================================================================== */
+@media screen and (max-width: 767px) {
+
+    .sideways-title {
+        display: none !important;
+    }
+
+    nav {
+        margin: 40px 0px;
+        padding: 0px var(--mobile-left-and-right-body-gutter);
+        justify-content: space-between;
+    }
+
+    nav img {
+        margin-right: 0px;
+    }
+
+    #mobile-hamburger-button {
+        display: inline-block;
+        border: none;
+        background-color: white;
+    }
+
+    #mobile-hamburger-button:hover {
+        cursor: pointer;
+    }
+
+    .mobile-navigation-list {
+        display: none;
+        flex-direction: column;
+        background-color: var(--very-light-grey);
+        position: absolute;
+        top: 0px;
+        gap: 25px;
+        --left-pixel-amount: 30px;
+        left: var(--left-pixel-amount);
+        width: calc(100% - var(--left-pixel-amount));
+        padding-left: 45px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+
+
+    }
+
+    .mobile-navigation-list a {
+        padding: 0;
+        background-color: var(--very-light-grey);
+        font-size: var(--heading-sm-font-size);
+        color: var(--very-dark-blue) !important;
+
+    }
+
+    nav a {
+        display: none;
+    }
+
+
+    /* this is the footer section ========================================================== */
+
+    footer {
+        flex-direction: column;
+        background-color: var(--very-light-grey);
+        height: auto;
+    }
+
+
+    .footer-logo-div {
+        margin-bottom: 0px;
+        padding: 50px 30px 50px 30px;
+        transform: translateY(-70px);
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        padding-left: 0;
+        margin-right: 0px;
+
+    }
+
+
+
+    .footer-see-portfolio {
+        margin-left: 0px;
+        transform: none;
+    }
+
+}
+
+
+
+  

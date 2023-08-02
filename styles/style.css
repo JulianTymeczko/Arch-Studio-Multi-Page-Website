@@ -645,31 +645,36 @@ this is the start of the media queries -----------------------------------------
     /* this is the footer section ================================================================ */
     footer {
         padding: 0;
-        height: 150px;
-        width: calc(100% - 200px);
+        height: 130px;
+       width: calc(100% - 200px);
         position: relative;
+       
     }
 
     .footer-logo-div {
         padding-left: 30px;
         padding-right: 30px;
     }
-
+    .footer-logo-div img{
+        width: 65px;
+    }
     .footer-nav {
         margin-right: 0;
         padding-left: 45px;
+       gap: 45px;
 
+    }
+    .footer-nav a{
+        font-size: 16px;
     }
 
     .footer-see-portfolio {
         transform: none;
+        padding-top: 27px;
+        padding-bottom: 27px;
         position: absolute;
         right: -200px;
-        width: 340px;
-        gap: 0px;
-        justify-content: space-between;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        
     }
 }
 
