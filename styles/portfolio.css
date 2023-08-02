@@ -1,4 +1,4 @@
-:root{
+:root {
     --very-dark-blue: hsl(225, 13%, 12%);
     --dark-grey: hsl(226, 6%, 40%);
     --medium-gray: hsl(223, 7%, 53%);
@@ -28,16 +28,50 @@
 
     --left-and-right-body-gutter: 15%;
 }
-a{
+
+a {
     text-decoration: none;
 }
-body{
+
+body {
     font-family: 'League Spartan', sans-serif;
 }
 
 
 
 /* this is the nav section ======================================================= */
+.sideways-title {
+
+    left: -100px;
+
+    bottom: -140px;
+    transform: rotate(90deg);
+
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 540px;
+    justify-content: space-between;
+
+
+}
+
+.sideways-title h1 {
+    color: var(--light-grey);
+    font-size: 19px;
+    letter-spacing: 20px;
+
+    font-weight: 300;
+}
+
+.straight-line {
+
+    width: 140px;
+    height: 1px;
+    background-color: var(--light-grey);
+}
+
 
 nav {
     position: relative;
@@ -47,6 +81,21 @@ nav {
     flex-direction: row;
     gap: 45px;
     align-items: center;
+}
+
+.nav-portfolio {
+    color: var(--very-dark-blue);
+}
+
+.nav-portfolio::after {
+    content: "a";
+    font-size: 0;
+    background-color: var(--very-dark-blue);
+    height: 1px;
+    width: 25px;
+    position: absolute;
+    bottom: 0px;
+    transform: translateX(-43px);
 }
 
 nav img {
@@ -73,62 +122,61 @@ nav a:hover {
     color: var(--very-dark-blue);
 }
 
-.sideways-title {
-
-    left: 0px;
-
-    bottom: -60px;
-    transform: rotate(90deg);
-
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 380px;
-    justify-content: space-between;
-
-
-}
-
-.sideways-title h1 {
-    color: var(--light-grey);
-    font-size: 25px;
-    letter-spacing: 25px;
-
-    font-weight: 300;
-}
-
-.straight-line {
-
-    width: 140px;
-    height: 1px;
-    background-color: var(--light-grey);
-}
 
 
 
 
 /* this is the main section ==================================================== */
 
+main {
+    margin-left: var(--left-and-right-body-gutter);
+    margin-right: var(--left-and-right-body-gutter);
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 10px; /* Adjust the gap size as per your preference */
-  }
-  
-  .item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none; /* Removes the default underline on anchor links */
-    color: #000; /* Sets the text color for the anchor links */
-  }
+    gap: 30px;
+    /* Adjust the gap size as per your preference */
+}
 
+.item {
+    
+   
+    padding: 450px 0px 0px 40px;
+    text-decoration: none;
+    height: 550px;
+    /* Removes the default underline on anchor links */
+    
+    /* Sets the text color for the anchor links */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../assets/portfolio/desktop/image-seraph.jpg);
   
+}
+
+.item div h1{
+    font-size: var(--heading-sm-font-size);
+    color: var(--very-light-grey);
+    margin-bottom: 5px;
+    
+   
+  
+}
+.item div h2{
+    font-size: var(--body-text-font-size);
+    color: var(--light-grey);
+    font-weight: 300;
+   
+ 
+}
+.item:nth-child(1){
+    background-image: url(../assets/portfolio/desktop/image-seraph.jpg);
+    
+}
+
+
 
 
 
@@ -199,6 +247,7 @@ footer {
     flex-direction: row;
     align-items: center;
     transform: translateX(130px);
+    
 }
 
 .footer-see-portfolio:hover {
@@ -225,8 +274,8 @@ footer {
 
 /* this is between tablet and desktop minor changes ======================================================== */
 @media screen and (min-width: 1439px) and (max-width: 1700px) {
-    .sideways-title{
-        left: -80px;
+    .sideways-title {
+        left: -120px;
     }
 }
 
@@ -256,31 +305,42 @@ footer {
         width: 180px;
     }
 
+    /* this is the main section ======================================================= */
+
+
+    
+
+
+
+
 
     /* this is the footer section ============================================= */
 
     footer {
         padding: 0;
         height: 130px;
-       width: calc(100% - 200px);
+        width: calc(100% - 200px);
         position: relative;
-       
+
     }
 
     .footer-logo-div {
         padding-left: 30px;
         padding-right: 30px;
     }
-    .footer-logo-div img{
+
+    .footer-logo-div img {
         width: 65px;
     }
+
     .footer-nav {
         margin-right: 0;
         padding-left: 45px;
-       gap: 45px;
+        gap: 45px;
 
     }
-    .footer-nav a{
+
+    .footer-nav a {
         font-size: 16px;
     }
 
@@ -290,7 +350,7 @@ footer {
         padding-bottom: 27px;
         position: absolute;
         right: -200px;
-        
+
     }
 
 
@@ -388,7 +448,3 @@ footer {
     }
 
 }
-
-
-
-  
