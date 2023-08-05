@@ -126,14 +126,19 @@ nav a:hover {
     color: var(--very-dark-blue);
 }
 
+/* 
+this is the header section ====================================================================== */
 
-
-
+header{
+    margin: 0px var(--left-and-right-body-gutter) 0px var(--left-and-right-body-gutter);
+}
 
 /* this is the main section ==================================================== */
 
 
-
+main{
+    margin: 0px var(--left-and-right-body-gutter) 0px var(--left-and-right-body-gutter);
+}
 
 
 

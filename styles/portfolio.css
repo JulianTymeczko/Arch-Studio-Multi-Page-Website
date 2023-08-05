@@ -306,8 +306,18 @@ footer {
         width: 180px;
     }
 
+    
+    
+    
     /* this is the main section ======================================================= */
-
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .item{
+        background-image: url(../assets/portfolio/tablet/image-228b.jpg);
+        padding-top: 150px;
+        height: 230px;
+    }
 
     
 
@@ -416,6 +426,34 @@ footer {
 
     nav a {
         display: none;
+    }
+
+
+
+
+
+
+    /* this is the main section ---------------------------------------------------------------- */
+
+
+    
+
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .item{
+        background-image: url(../assets/portfolio/mobile/image-228b.jpg);
+        padding-left: 0px;
+        padding-top: 120px;
+        height: 200px;
+        overflow-x: scroll;
+    }
+    .item div{
+        text-wrap: nowrap;
+        text-indent: 30px;
+    }
+    .item div h1{
+        font-size: 27px;
     }
 
 
