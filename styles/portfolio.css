@@ -131,6 +131,7 @@ nav a:hover {
 main {
     margin-left: var(--left-and-right-body-gutter);
     margin-right: var(--left-and-right-body-gutter);
+    margin-bottom: 150px;
 }
 
 .grid-container {
