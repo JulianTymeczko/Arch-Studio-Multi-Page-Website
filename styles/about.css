@@ -208,12 +208,13 @@ header{
 
 
 main{
-    margin: 0px var(--left-and-right-body-gutter) 0px var(--left-and-right-body-gutter);
+    margin: 0px var(--left-and-right-body-gutter) 150px var(--left-and-right-body-gutter);
 }
 #our-heritage{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 150px;
 
 }
 
@@ -248,10 +249,18 @@ main{
 
 .the-leaders-right-div > div a{
     display: none;
-    
+    position: absolute;
+    top: 50%;
+    --position-difference: 10%;
+}
+.twitter{
+    left: calc(50% + var(--position-difference));
+}
+.linkedin{
+    left: calc(50% - var(--position-difference));
 }
 .the-leaders-right-div > div:hover{
-    filter: brightness(60%);
+    
     cursor: pointer;
 
 }
@@ -265,6 +274,7 @@ main{
     width: 350px;
     height: 350px;
     margin-bottom: 25px;
+    position: relative;
 }
 
 .thompson-smith div{
@@ -274,24 +284,27 @@ main{
     width: 350px;
     height: 350px;
     margin-bottom: 25px;
+    position: relative;
 }
 
 .jackson-rourke div{
-    background-image: url(../assets/about/desktop/avatar-jake.jpg);
+    background-image: url(../assets/about/desktop/avatar-jackson.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 350px;
     height: 350px;
     margin-bottom: 25px;
+    position: relative;
 }
 
 .maria-simpson div{
-    background-image: url(../assets/about/desktop/avatar-jake.jpg);
+    background-image: url(../assets/about/desktop/avatar-maria.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 350px;
     height: 350px;
     margin-bottom: 25px;
+    position: relative;
 }
 
 .the-leaders-right-div h1{
