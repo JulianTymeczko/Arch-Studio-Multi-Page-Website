@@ -237,6 +237,72 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 90px;
+    transform: translateY(10px);
+}
+
+
+#main-office h1{
+    font-size: var(--body-text-font-size);
+    color: var(--dark-grey);
+    margin-bottom: 30px;
+}
+#office-II h1{
+    font-size: var(--body-text-font-size);
+    color: var(--dark-grey);
+    margin-bottom: 30px;
+}
+#main-office div:nth-child(2){
+    margin-bottom: 80px;
+}
+#main-office div:nth-child(2) h2{
+    margin-bottom: 10px;
+    color: var(--medium-gray);
+    font-weight: 300 ;
+    font-size: var(--body-text-font-size);
+
+}
+#office-II div:nth-child(2){
+    margin-bottom: 80px;
+}
+#office-II div:nth-child(2) h2{
+    margin-bottom: 10px;
+    color: var(--medium-gray);
+    font-weight: 300;
+    font-size: var(--body-text-font-size);
+}
+
+#main-office div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#office-II div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+#main-office a{
+    font-size: var(--body-text-font-size);
+    color: var(--very-dark-blue);
+    font-weight: bold;
+
+}
+#office-II a{
+    font-size: var(--body-text-font-size);
+    color: var(--very-dark-blue);
+    font-weight: bold;
+}
+
+
+#main-office a:hover{
+    text-decoration: underline;
+    
+}
+#office-II a:hover{
+    text-decoration: underline;
 }
 
 
