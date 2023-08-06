@@ -205,17 +205,39 @@ header{
 main{
     margin-left: var(--left-and-right-body-gutter);
     margin-right: var(--left-and-right-body-gutter);
+    margin-bottom: 150px;
 }
 
 
+/* this is the contact details section ====================================== */
+#contact-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
 
 
+.contact-details-left-div h1{
+    font-size: var(--heading-med-font-size);
+    line-height: var(--heading-med-line-spacing);
+    color: var(--very-dark-blue);
+    position: relative;
+}
+.contact-details-left-div h1::before{
+    content: "";
+    background-color: var(--light-grey);
+    position: absolute;
+    top: -50px;
+    height: 1px;
+    width: 70px;
+}
 
-
-
-
-
-
+.contact-details-right-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 
 
@@ -235,28 +257,27 @@ this is the form section in main ===============================================
 }
 .form-section-right-div{
     width: 60%;
+    transform: translateY(-25px);
 }
 .form-group {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
  
   textarea:hover{
     cursor: pointer;
   }
-  label {
-    position: absolute;
-    top: -20px;
-    left: 30px;
-    background-color: white;
-    padding: 0 5px;
+  
+  input::placeholder, textarea::placeholder {
+    
+   
     color: var(--light-grey);
     font-size: 23px;
-   font-weight: 550;
+   letter-spacing: 1.5px;
   }
  
-  label:hover{
+  input::placeholder:hover{
     cursor: pointer;
   } 
   input:hover{
@@ -285,12 +306,14 @@ this is the form section in main ===============================================
     width: 100%;
     border: none;
     border-bottom: 1px solid var(--very-dark-blue);
-    padding: 5px 10px;
+    padding: 25px 40px;
     color: var(--very-dark-blue);
     font-size: 23px;
-    font-weight: 550;
+    font-weight: 600;
   }
-
+  input::placeholder{
+    margin-bottom: 25px;
+  }
   input[type="text"]:focus,
   input[type="email"]:focus,
   textarea:focus {
@@ -299,19 +322,14 @@ this is the form section in main ===============================================
     z-index: 5;
     cursor: text;
   }
+ 
+  #message{
+    padding-bottom: 0;
+    padding-top: 15px;
+  }
 
   
-  input[type="text"]:focus ~ label,
-  input[type="email"]:focus ~ label,
-  textarea:focus ~ label,
-  input[type="text"].filled ~ label,
-  input[type="email"].filled ~ label,
-  textarea.filled ~ label {
-    transform: translateY(-20px);
-    font-size: 12px;
-    color: #007bff;
-  }
- 
+  
 
 
 
