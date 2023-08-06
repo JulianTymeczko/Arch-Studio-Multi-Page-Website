@@ -250,7 +250,7 @@ main{
 .the-leaders-right-div > div a{
     display: none;
     position: absolute;
-    top: 50%;
+    top: calc(50% - 19px);
     --position-difference: 10%;
 }
 .twitter{

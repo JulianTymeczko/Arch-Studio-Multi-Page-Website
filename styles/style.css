@@ -504,7 +504,7 @@ footer {
 this is the start of the media queries ------------------------------------------------------------------------ */
 
 /* this is between tablet and desktop minor changes ======================================================== */
-@media screen and (min-width: 1439px) and (max-width: 1700px) {
+@media screen and (min-width: 1440px) and (max-width: 1700px) {
     .sideways-title{
         left: -80px;
     }
