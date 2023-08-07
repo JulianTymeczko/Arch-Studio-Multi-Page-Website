@@ -596,7 +596,7 @@ footer {
 
     nav {
         margin: 40px 0px;
-        padding: 0px var(--mobile-left-and-right-body-gutter);
+        padding: 0px var(--left-and-right-body-gutter);
         justify-content: space-between;
     }
 
@@ -697,22 +697,22 @@ footer {
     .jake-richards div{
         height: 250px;
         width: auto;
-        max-width: 275px;
+        
     }
     .thompson-smith div{
         height: 250px;
         width: auto;
-        max-width: 275px;
+       
     }
     .jackson-rourke div{
         height: 250px;
         width: auto;
-        max-width: 275px;
+       
     }
     .maria-simpson div{
         height: 250px;
         width: auto;
-        max-width: 275px;
+       
     }
 
 

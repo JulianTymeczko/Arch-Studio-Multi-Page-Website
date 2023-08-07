@@ -380,7 +380,7 @@ footer {
 
     nav {
         margin: 40px 0px;
-        padding: 0px var(--mobile-left-and-right-body-gutter);
+        padding: 0px var(--left-and-right-body-gutter);
         justify-content: space-between;
     }
 
