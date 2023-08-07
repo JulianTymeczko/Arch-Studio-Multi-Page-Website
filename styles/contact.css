@@ -37,7 +37,12 @@ body{
 }
 
 
-
+.tablet-image{
+    display: none;
+}
+.mobile-image{
+    display: none;
+}
 
 
 
@@ -511,6 +516,19 @@ footer {
 
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
+    :root{
+        --heading-xl-font-size: 150px;
+    }
+    .tablet-image{
+        display: inline-block;
+    }
+    .desktop-image{
+        display: none;
+    }
+    
+
+
+
 
 
     .sideways-title {
@@ -529,14 +547,65 @@ footer {
         width: 180px;
     }
 
-    /* this is the main section ======================================================= */
 
+    /* this is the header section ===================================================== */
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .left-div-header::before{
+        display: none;
+    }
+    .left-div-header::after{
+        width: 60%;
+        height: 50%;
+    }
+
+    /* this is the main section ======================================================= */
+    #contact-details{
+        flex-direction: column;
+    }
+    .contact-details-left-div{
+        margin-bottom: 50px;
+    }
+    .contact-details-right-div{
+        flex-direction: column;
+        gap:0px;
+    }
+    #main-office{
+        position: relative;
+    }
+    #main-office div:nth-child(3){
+        position: absolute;
+        right: 0px;
+        bottom: 50%;
+    }
+    #office-II{
+        position: relative;
+    }
+    #office-II div:nth-child(3){
+        position: absolute;
+        right: 0px;
+        bottom: 50%;
+    }
+
+    #form-section{
+        flex-direction: column;
+        gap: 80px;
+    }
+    #form-section br{
+        display: none;
+    }
+    .form-section-right-div{
+        width: 100%;
+    }
+    .last button{
+        position: static;
+    }
 
     
-
-
-
-
 
     /* this is the footer section ============================================= */
 
@@ -586,6 +655,16 @@ footer {
 
 /* this is the mobile view ================================================================================================== */
 @media screen and (max-width: 767px) {
+
+    .tablet-image{
+        display: none
+    }
+    .desktop-image{
+        display: none;
+    }
+    .mobile-image{
+        display:inline-block;
+    }
 
     .sideways-title {
         display: none !important;
