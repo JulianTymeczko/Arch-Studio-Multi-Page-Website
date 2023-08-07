@@ -553,7 +553,9 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    
+    #about-header{
+        
+    }
     
     .left-div-header::before{
         display: none;

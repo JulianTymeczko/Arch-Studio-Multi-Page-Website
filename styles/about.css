@@ -38,6 +38,13 @@ body{
 
 
 
+.tablet-image{
+    display: none;
+}
+.mobile-image{
+    display: none;
+}
+
 
 
 
@@ -425,10 +432,17 @@ footer {
 
 /* this is for tablet =============================================================================================== */
 
-
-
 @media screen and (min-width: 768px) and (max-width: 1439px) {
-
+    .tablet-image{
+        display: inline-block;
+    }
+    .desktop-image{
+        display: none;
+    }
+    
+    :root{
+        --heading-xl-font-size: 150px;
+    }
 
     .sideways-title {
         left: -130px;
@@ -446,11 +460,59 @@ footer {
         width: 180px;
     }
 
+
+    /* this is the header section ======================================================= */
+
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    #about-header{
+        
+    }
+    
+    .left-div-header::before{
+        display: none;
+    }
+    .left-div-header::after{
+        width: 60%;
+        height: 50%;
+    }
+
     /* this is the main section ======================================================= */
 
-
-    
-
+    #our-heritage div:nth-child(2){
+        display: none;
+    }
+    #the-leaders{
+        flex-direction: column;
+    }
+    #the-leaders > h1{
+        margin-bottom: 60px;
+    }
+    .the-leaders-right-div{
+       
+        --picture-width: 250px;
+        --width-increase: 10px;
+       gap: calc(30px - (var(--width-increase) * 2));
+       row-gap: 70px;
+    }
+    .jake-richards div{
+        height: 250px;
+        width: calc(var(--picture-width) + var(--width-increase));
+    }
+    .thompson-smith div{
+        height: 250px;
+        width: calc(var(--picture-width) + var(--width-increase));
+    }
+    .jackson-rourke div{
+        height: 250px;
+        width: calc(var(--picture-width) + var(--width-increase));
+    }
+    .maria-simpson div{
+        height: 250px;
+        width: calc(var(--picture-width) + var(--width-increase));
+    }
 
 
 
@@ -504,6 +566,15 @@ footer {
 /* this is the mobile view ================================================================================================== */
 @media screen and (max-width: 767px) {
 
+    .tablet-image{
+        display: none
+    }
+    .desktop-image{
+        display: none;
+    }
+    .mobile-image{
+        display:inline-block;
+    }
     .sideways-title {
         display: none !important;
     }
