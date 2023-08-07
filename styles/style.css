@@ -51,7 +51,7 @@ nav {
     align-items: center;
 }
 
-nav img {
+nav a[href="./index.html"] {
     margin-right: 50px
 }
 

@@ -109,7 +109,7 @@ nav {
     transform: translateX(-43px);
 }
 
-nav img {
+nav a[href="../index.html"] {
     margin-right: 50px
 }
 
