@@ -725,7 +725,9 @@ footer {
     nav a {
         display: none;
     }
-    
+    nav a[href="../index.html"]{
+        display: inline-block;
+    }
     /* this is the header section ===================================================== */
     header{
         flex-direction: column;

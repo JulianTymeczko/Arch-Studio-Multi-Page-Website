@@ -764,7 +764,9 @@ this is the start of the media queries -----------------------------------------
         display: none;
     }
 
-
+    nav a[href="./index.html"]{
+        display: inline-block;
+    }
 
 
 

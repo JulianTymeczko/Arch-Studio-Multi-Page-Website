@@ -428,7 +428,9 @@ footer {
         display: none;
     }
 
-
+    nav a[href="../index.html"]{
+        display: inline-block;
+    }
 
 
 
@@ -449,7 +451,7 @@ footer {
         overflow-x: scroll;
     }
     .item div{
-        text-wrap: nowrap;
+        white-space: nowrap;
         text-indent: 30px;
     }
     .item div h1{

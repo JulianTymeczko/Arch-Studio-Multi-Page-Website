@@ -230,6 +230,15 @@ main{
     line-height: var(--heading-med-line-spacing);
     color: var(--very-dark-blue);
     margin-bottom: 60px;
+    position: relative;
+}
+#our-heritage div h1::before{
+    content: "";
+    background-color: var(--light-grey);
+    position: absolute;
+    top: -50px;
+    height: 1px;
+    width: 70px;
 }
 #our-heritage div p{
     color: var(--dark-grey);
@@ -634,7 +643,9 @@ footer {
     nav a {
         display: none;
     }
-
+    nav a[href="../index.html"]{
+        display: inline-block;
+    }
      /* this is the header section ======================================================= */
 
      header{
@@ -647,8 +658,12 @@ footer {
     }
     .left-div-header{
         margin-bottom: 20px;
+        width: 100%;
+        
     }
-    
+    .left-div-header img{
+        width: 100%;
+    }
     .left-div-header::before{
         display: none;
     }
