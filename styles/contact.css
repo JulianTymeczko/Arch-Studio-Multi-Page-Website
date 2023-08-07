@@ -308,6 +308,12 @@ main{
 
 
 /* 
+this is the map section in main --======================================================== */
+#map{
+    margin-bottom: 150px;
+}
+
+/* 
 this is the form section in main ============================================================= */
 
 #form-section{
