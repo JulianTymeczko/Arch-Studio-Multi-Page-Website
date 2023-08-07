@@ -433,6 +433,10 @@ footer {
 /* this is for tablet =============================================================================================== */
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
+    :root{
+        --heading-xl-font-size: 150px;
+        
+    }
     .tablet-image{
         display: inline-block;
     }
@@ -440,9 +444,7 @@ footer {
         display: none;
     }
     
-    :root{
-        --heading-xl-font-size: 150px;
-    }
+    
 
     .sideways-title {
         left: -130px;
@@ -565,7 +567,11 @@ footer {
 
 /* this is the mobile view ================================================================================================== */
 @media screen and (max-width: 767px) {
-
+    :root{
+        --heading-xl-font-size: 150px;
+        --heading-med-font-size: 50px;
+        --heading-med-line-spacing: 45px;
+    }
     .tablet-image{
         display: none
     }
@@ -627,6 +633,71 @@ footer {
 
     nav a {
         display: none;
+    }
+
+     /* this is the header section ======================================================= */
+
+     header{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 100px 0;
+    }
+    #about-header{
+        display: none;
+    }
+    .left-div-header{
+        margin-bottom: 20px;
+    }
+    
+    .left-div-header::before{
+        display: none;
+    }
+    .left-div-header::after{
+        width: 90%;
+        height: 20%;
+        left: 0px;
+    }
+    .right-div-header{
+        margin: 0 var(--left-and-right-body-gutter) 0 var(--left-and-right-body-gutter);
+    }
+    .right-div-header h1::before{
+        display: none;
+    }
+    /* this is the main section ======================================================= */
+
+    #our-heritage div:nth-child(2){
+        display: none;
+    }
+    #the-leaders{
+        flex-direction: column;
+    }
+    #the-leaders > h1{
+        margin-bottom: 60px;
+    }
+    .the-leaders-right-div{
+       
+        grid-template-columns: auto;
+       row-gap: 70px;
+    }
+    .jake-richards div{
+        height: 250px;
+        width: auto;
+        max-width: 275px;
+    }
+    .thompson-smith div{
+        height: 250px;
+        width: auto;
+        max-width: 275px;
+    }
+    .jackson-rourke div{
+        height: 250px;
+        width: auto;
+        max-width: 275px;
+    }
+    .maria-simpson div{
+        height: 250px;
+        width: auto;
+        max-width: 275px;
     }
 
 

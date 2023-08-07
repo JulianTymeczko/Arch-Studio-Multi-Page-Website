@@ -657,7 +657,11 @@ footer {
 
 /* this is the mobile view ================================================================================================== */
 @media screen and (max-width: 767px) {
-
+    :root{
+        --heading-xl-font-size: 150px;
+        --heading-med-font-size: 50px;
+        --heading-med-line-spacing: 45px;
+    }
     .tablet-image{
         display: none
     }
@@ -721,7 +725,101 @@ footer {
     nav a {
         display: none;
     }
+    
+    /* this is the header section ===================================================== */
+    header{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 100px 0;
+    }
+    #about-header{
+        display: none;
+    }
+    .left-div-header{
+        margin-bottom: 20px;
+    }
+    
+    .left-div-header::before{
+        display: none;
+    }
+    .left-div-header::after{
+        width: 90%;
+        height: 20%;
+        left: 0px;
+    }
+    .right-div-header{
+        margin: 0 var(--left-and-right-body-gutter) 0 var(--left-and-right-body-gutter);
+    }
+    .right-div-header h1::before{
+        display: none;
+    }
 
+    /* this is the main section ======================================================= */
+    main{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #contact-details{
+        flex-direction: column;
+        margin-right: var(--left-and-right-body-gutter);
+        margin-left: var(--left-and-right-body-gutter);
+
+    }
+    .contact-details-left-div{
+        margin-bottom: 50px;
+    }
+    .contact-details-right-div{
+        flex-direction: column;
+        gap:0px;
+    }
+    #main-office{
+        position: relative;
+    }
+    #main-office div:nth-child(3){
+        position: absolute;
+        right: 0px;
+        bottom: 50%;
+    }
+    #office-II{
+        position: relative;
+    }
+    #office-II div:nth-child(3){
+        position: absolute;
+        right: 0px;
+        bottom: 50%;
+    }
+
+    #form-section{
+        flex-direction: column;
+        gap: 80px;
+        margin-left: var(--left-and-right-body-gutter);
+        margin-right: var(--left-and-right-body-gutter);
+    }
+    #form-section br{
+        display: none;
+    }
+    .form-section-right-div{
+        width: 100%;
+    }
+    .last button{
+        position: static;
+    }
+    #main-office{
+        margin-bottom: 50px;
+    }
+    #main-office div:nth-child(2){
+        margin-bottom: 50px;
+    }
+    #main-office div:nth-child(3){
+        position: static;
+    }
+    #office-II div:nth-child(2){
+        margin-bottom: 50px;
+    }
+    #office-II div:nth-child(3){
+        position: static;
+    }
+    
 
     /* this is the footer section ========================================================== */
 
