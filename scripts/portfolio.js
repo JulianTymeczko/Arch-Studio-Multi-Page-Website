@@ -26,7 +26,7 @@ mobileNavButton.addEventListener("click", function () {
 
     if (mobileNavigationList.style.display == "none" || !mobileNavigationList.style.display) {
         mobileNavigationList.style.display = "flex"
-        header.setAttribute("style", "background-image: url(./assets/home/mobile/mobile-really-dark-image-hero-paramour.jpg)")
+        headerImg.setAttribute("style", "background-image: url(./assets/home/mobile/mobile-really-dark-image-hero-paramour.jpg)")
         headerA.setAttribute("style", "filter: brightness(80%);")
         headerP.setAttribute("style", "filter: brightness(80%);")
         disableScroll()
@@ -35,7 +35,7 @@ mobileNavButton.addEventListener("click", function () {
     }
     else if (mobileNavigationList.style.display == "flex") {
         mobileNavigationList.style.display = "none"
-        header.setAttribute("style", "background-image: url(./assets/home/mobile/dark-image-hero-paramour.jpg)")
+        headerImg.setAttribute("style", "background-image: url(./assets/home/mobile/dark-image-hero-paramour.jpg)")
         headerA.setAttribute("style", "filter: brightness(100%);")
         headerP.setAttribute("style", "filter: brightness(100%);")
         enableScroll()
@@ -48,19 +48,19 @@ window.addEventListener('resize', function() {
     const windowWidth = window.innerWidth;
     if (mobileNavigationList.style.display == "flex" && windowWidth >= 768){
         mobileNavigationList.style.display = "none"
-        header.setAttribute("style", "background-image: url(./assets/home/tablet/dark-image-hero-paramour-tablet.jpg)")
+        headerImg.setAttribute("style", "background-image: url(./assets/home/tablet/dark-image-hero-paramour-tablet.jpg)")
         headerA.setAttribute("style", "filter: brightness(100%);")
         headerP.setAttribute("style", "filter: brightness(100%);")
         enableScroll()
     }
     else if (windowWidth >= 768){
-        header.setAttribute("style", "background-image: url(./assets/home/tablet/dark-image-hero-paramour-tablet.jpg)")
+        headerImg.setAttribute("style", "background-image: url(./assets/home/tablet/dark-image-hero-paramour-tablet.jpg)")
     }
     if (windowWidth < 768 && mobileNavigationList.style.display == "none"){
-        header.setAttribute("style", "background-image: url(./assets/home/mobile/dark-image-hero-paramour.jpg)")
+        headerImg.setAttribute("style", "background-image: url(./assets/home/mobile/dark-image-hero-paramour.jpg)")
     }
     if (windowWidth >= 1440){
-        header.setAttribute("style", "background-image: url(./assets/home/desktop/dark-paramour-tower.jpg)")
+        headerImg.setAttribute("style", "background-image: url(./assets/home/desktop/dark-paramour-tower.jpg)")
     }
 });
 

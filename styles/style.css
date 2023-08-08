@@ -934,5 +934,8 @@ this is the start of the media queries -----------------------------------------
     .footer-see-portfolio {
         margin-left: 0px;
         transform: none;
+        padding: 30px;
+        font-size: 17px !important;
+        align-items: end;
     }
 }

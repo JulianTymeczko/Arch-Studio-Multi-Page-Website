@@ -109,7 +109,9 @@ nav a[href="../index.html"] {
 .mobile-navigation-list {
     display: none;
 }
-
+.mobile-navigation-list a{
+    font-weight: bold;
+}
 nav a {
     font-size: var(--body-text-font-size);
     color: var(--medium-gray);
@@ -288,7 +290,9 @@ footer {
 
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
-
+    :root{
+        --left-and-right-body-gutter: 10%;
+    }
 
     .sideways-title {
         left: -130px;
@@ -486,6 +490,9 @@ footer {
     .footer-see-portfolio {
         margin-left: 0px;
         transform: none;
+        padding: 30px;
+       font-size: 17px !important;
+       align-items: end;
     }
 
 }

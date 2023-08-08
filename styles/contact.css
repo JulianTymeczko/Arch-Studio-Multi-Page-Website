@@ -1,4 +1,4 @@
-:root{
+:root {
     --very-dark-blue: hsl(225, 13%, 12%);
     --dark-grey: hsl(226, 6%, 40%);
     --medium-gray: hsl(223, 7%, 53%);
@@ -29,18 +29,20 @@
     --left-and-right-body-gutter: 15%;
 }
 
-a{
+a {
     text-decoration: none;
 }
-body{
+
+body {
     font-family: 'League Spartan', sans-serif;
 }
 
 
-.tablet-image{
+.tablet-image {
     display: none;
 }
-.mobile-image{
+
+.mobile-image {
     display: none;
 }
 
@@ -119,6 +121,10 @@ nav a[href="../index.html"] {
     display: none;
 }
 
+.mobile-navigation-list a {
+    font-weight: bold;
+}
+
 nav a {
     font-size: var(--body-text-font-size);
     color: var(--medium-gray);
@@ -133,7 +139,7 @@ nav a:hover {
 
 /* this is the header section ================================================= */
 
-header{
+header {
     margin: 0px var(--left-and-right-body-gutter) 100px var(--left-and-right-body-gutter);
     display: flex;
     flex-direction: row;
@@ -141,7 +147,8 @@ header{
     align-items: end;
 
 }
-#about-header{
+
+#about-header {
     position: absolute;
     font-size: var(--heading-xl-font-size);
     right: -80px;
@@ -149,11 +156,13 @@ header{
     color: var(--very-light-grey);
     z-index: 2;
 }
-.left-div-header{
+
+.left-div-header {
     position: relative;
     --clip-path-right: 30px;
 }
-.left-div-header::before{
+
+.left-div-header::before {
     position: absolute;
     content: "";
     bottom: 0px;
@@ -161,10 +170,11 @@ header{
     background-color: white;
     height: 540px;
     width: 150px;
-    
-  
+
+
 }
-.left-div-header::after{
+
+.left-div-header::after {
     position: absolute;
     content: "";
     bottom: 0px;
@@ -172,13 +182,13 @@ header{
     background-color: white;
     height: 100%;
     width: var(--clip-path-right);
-    
-    
+
+
 }
 
 
 
-.right-div-header h1::before{
+.right-div-header h1::before {
     content: "";
     background-color: var(--light-grey);
     position: absolute;
@@ -186,14 +196,16 @@ header{
     height: 1px;
     width: 70px;
 }
-.right-div-header h1{
+
+.right-div-header h1 {
     font-size: var(--heading-med-font-size);
     line-height: var(--heading-med-line-spacing);
     color: var(--very-dark-blue);
     margin-bottom: 50px;
     position: relative;
 }
-.right-div-header p{
+
+.right-div-header p {
     font-size: var(--body-text-font-size);
     line-height: var(--body-text-line-spacing);
     color: var(--dark-grey);
@@ -207,7 +219,7 @@ header{
 
 /* this is the main section ==================================================== */
 
-main{
+main {
     margin-left: var(--left-and-right-body-gutter);
     margin-right: var(--left-and-right-body-gutter);
     margin-bottom: 150px;
@@ -215,7 +227,7 @@ main{
 
 
 /* this is the contact details section ====================================== */
-#contact-details{
+#contact-details {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -223,13 +235,14 @@ main{
 }
 
 
-.contact-details-left-div h1{
+.contact-details-left-div h1 {
     font-size: var(--heading-med-font-size);
     line-height: var(--heading-med-line-spacing);
     color: var(--very-dark-blue);
     position: relative;
 }
-.contact-details-left-div h1::before{
+
+.contact-details-left-div h1::before {
     content: "";
     background-color: var(--light-grey);
     position: absolute;
@@ -238,7 +251,7 @@ main{
     width: 70px;
 }
 
-.contact-details-right-div{
+.contact-details-right-div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -247,66 +260,74 @@ main{
 }
 
 
-#main-office h1{
+#main-office h1 {
     font-size: var(--body-text-font-size);
     color: var(--dark-grey);
     margin-bottom: 30px;
 }
-#office-II h1{
+
+#office-II h1 {
     font-size: var(--body-text-font-size);
     color: var(--dark-grey);
     margin-bottom: 30px;
 }
-#main-office div:nth-child(2){
+
+#main-office div:nth-child(2) {
     margin-bottom: 80px;
 }
-#main-office div:nth-child(2) h2{
+
+#main-office div:nth-child(2) h2 {
     margin-bottom: 10px;
     color: var(--medium-gray);
-    font-weight: 300 ;
+    font-weight: 300;
     font-size: var(--body-text-font-size);
 
 }
-#office-II div:nth-child(2){
+
+#office-II div:nth-child(2) {
     margin-bottom: 80px;
 }
-#office-II div:nth-child(2) h2{
+
+#office-II div:nth-child(2) h2 {
     margin-bottom: 10px;
     color: var(--medium-gray);
     font-weight: 300;
     font-size: var(--body-text-font-size);
 }
 
-#main-office div:nth-child(3){
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-#office-II div:nth-child(3){
+#main-office div:nth-child(3) {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
+#office-II div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
 
-#main-office a{
+
+#main-office a {
     font-size: var(--body-text-font-size);
     color: var(--very-dark-blue);
     font-weight: bold;
 
 }
-#office-II a{
+
+#office-II a {
     font-size: var(--body-text-font-size);
     color: var(--very-dark-blue);
     font-weight: bold;
 }
 
 
-#main-office a:hover{
+#main-office a:hover {
     text-decoration: underline;
-    
+
 }
-#office-II a:hover{
+
+#office-II a:hover {
     text-decoration: underline;
 }
 
@@ -314,72 +335,81 @@ main{
 
 /* 
 this is the map section in main --======================================================== */
-#map{
+#map {
     margin-bottom: 150px;
 }
 
 /* 
 this is the form section in main ============================================================= */
 
-#form-section{
+#form-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#form-section h1{
+#form-section h1 {
     font-size: var(--heading-med-font-size);
     line-height: var(--heading-med-line-spacing);
     color: var(--very-dark-blue);
 }
-.form-section-right-div{
+
+.form-section-right-div {
     width: 60%;
     transform: translateY(-25px);
 }
+
 .form-group {
     position: relative;
     margin-bottom: 30px;
-  }
+}
 
- 
-  textarea:hover{
+
+textarea:hover {
     cursor: pointer;
-  }
-  
-  input::placeholder, textarea::placeholder {
-    
-   
+}
+
+input::placeholder,
+textarea::placeholder {
+
+
     color: var(--light-grey);
     font-size: 23px;
-   letter-spacing: 1.5px;
-  }
- 
-  input::placeholder:hover{
+    letter-spacing: 1.5px;
+}
+
+input::placeholder:hover {
     cursor: pointer;
-  } 
-  input:hover{
+}
+
+input:hover {
     cursor: pointer;
-  }
-  textarea {
+}
+
+textarea {
     resize: none;
-  }
-  .last{
+}
+
+.last {
     margin-bottom: 0;
-  }
-  .last button{
+}
+
+.last button {
     margin-left: 0;
     transform: translateY(-5px);
     padding: 30px;
-   border: none;
-   text-align: end;
-  margin-left: auto;
-  }
-  .last button:hover{
+    border: none;
+    text-align: end;
+    margin-left: auto;
+}
+
+.last button:hover {
     cursor: pointer;
-  }
-  input[type="text"],
-  input[type="email"],
-  textarea {
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
     width: 100%;
     border: none;
     border-bottom: 1px solid var(--very-dark-blue);
@@ -387,26 +417,28 @@ this is the form section in main ===============================================
     color: var(--very-dark-blue);
     font-size: 23px;
     font-weight: 600;
-  }
-  input::placeholder{
+}
+
+input::placeholder {
     margin-bottom: 25px;
-  }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  textarea:focus {
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
     outline: none;
     border-bottom: 3px solid var(--very-dark-blue);
     z-index: 5;
     cursor: text;
-  }
- 
-  #message{
+}
+
+#message {
     padding-bottom: 0;
     padding-top: 15px;
-  }
+}
 
-  
-  
+
+
 
 
 
@@ -476,7 +508,7 @@ footer {
     flex-direction: row;
     align-items: center;
     transform: translateX(130px);
-    
+
 }
 
 .footer-see-portfolio:hover {
@@ -516,16 +548,19 @@ footer {
 
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
-    :root{
+    :root {
         --heading-xl-font-size: 150px;
+        --left-and-right-body-gutter: 10%;
     }
-    .tablet-image{
+
+    .tablet-image {
         display: inline-block;
     }
-    .desktop-image{
+
+    .desktop-image {
         display: none;
     }
-    
+
 
 
 
@@ -549,65 +584,101 @@ footer {
 
 
     /* this is the header section ===================================================== */
-    header{
+    header {
         flex-direction: column;
         align-items: center;
+        position: relative;
     }
-    #about-header{
-        
+
+    #about-header {
+        left: 15%;
+        top: 30%;
+        letter-spacing: 2px;
     }
-    
-    .left-div-header::before{
+
+    .left-div-header {
+        width: 100%;
+        max-height: 750px;
+    }
+
+    .left-div-header img {
+        width: 100%;
+        max-height: 750px;
+    }
+
+    .left-div-header::before {
         display: none;
     }
-    .left-div-header::after{
-        width: 60%;
-        height: 50%;
+
+    .left-div-header::after {
+        width: 90%;
+        height: 65%;
     }
+    .right-div-header{
+        position: absolute;
+     right: 0%;
+       bottom: 2%;
+       width: 80%;
+    }   
+    .right-div-header h1::before{
+        top: -80px;
+    }
+
+
+
 
     /* this is the main section ======================================================= */
-    #contact-details{
+    #contact-details {
         flex-direction: column;
     }
-    .contact-details-left-div{
+
+    .contact-details-left-div {
         margin-bottom: 50px;
     }
-    .contact-details-right-div{
+
+    .contact-details-right-div {
         flex-direction: column;
-        gap:0px;
+        gap: 0px;
     }
-    #main-office{
+
+    #main-office {
         position: relative;
     }
-    #main-office div:nth-child(3){
-        position: absolute;
-        right: 0px;
-        bottom: 50%;
-    }
-    #office-II{
-        position: relative;
-    }
-    #office-II div:nth-child(3){
+
+    #main-office div:nth-child(3) {
         position: absolute;
         right: 0px;
         bottom: 50%;
     }
 
-    #form-section{
+    #office-II {
+        position: relative;
+    }
+
+    #office-II div:nth-child(3) {
+        position: absolute;
+        right: 0px;
+        bottom: 50%;
+    }
+
+    #form-section {
         flex-direction: column;
         gap: 80px;
     }
-    #form-section br{
+
+    #form-section br {
         display: none;
     }
-    .form-section-right-div{
+
+    .form-section-right-div {
         width: 100%;
     }
-    .last button{
+
+    .last button {
         position: static;
     }
 
-    
+
 
     /* this is the footer section ============================================= */
 
@@ -657,19 +728,22 @@ footer {
 
 /* this is the mobile view ================================================================================================== */
 @media screen and (max-width: 767px) {
-    :root{
+    :root {
         --heading-xl-font-size: 150px;
         --heading-med-font-size: 50px;
         --heading-med-line-spacing: 45px;
     }
-    .tablet-image{
+
+    .tablet-image {
         display: none
     }
-    .desktop-image{
+
+    .desktop-image {
         display: none;
     }
-    .mobile-image{
-        display:inline-block;
+
+    .mobile-image {
+        display: inline-block;
     }
 
     .sideways-title {
@@ -725,103 +799,125 @@ footer {
     nav a {
         display: none;
     }
-    nav a[href="../index.html"]{
+
+    nav a[href="../index.html"] {
         display: inline-block;
     }
+
     /* this is the header section ===================================================== */
-    header{
+    header {
         flex-direction: column;
         align-items: center;
         margin: 0 0 100px 0;
     }
-    #about-header{
+
+    #about-header {
         display: none;
     }
-    .left-div-header{
+
+    .left-div-header {
         margin-bottom: 20px;
     }
-    
-    .left-div-header::before{
+
+    .left-div-header::before {
         display: none;
     }
-    .left-div-header::after{
+
+    .left-div-header::after {
         width: 90%;
         height: 20%;
         left: 0px;
     }
-    .right-div-header{
+
+    .right-div-header {
         margin: 0 var(--left-and-right-body-gutter) 0 var(--left-and-right-body-gutter);
     }
-    .right-div-header h1::before{
+
+    .right-div-header h1::before {
         display: none;
     }
 
     /* this is the main section ======================================================= */
-    main{
+    main {
         margin-left: 0;
         margin-right: 0;
     }
-    #contact-details{
+
+    #contact-details {
         flex-direction: column;
         margin-right: var(--left-and-right-body-gutter);
         margin-left: var(--left-and-right-body-gutter);
 
     }
-    .contact-details-left-div{
+
+    .contact-details-left-div {
         margin-bottom: 50px;
     }
-    .contact-details-right-div{
+
+    .contact-details-right-div {
         flex-direction: column;
-        gap:0px;
+        gap: 0px;
     }
-    #main-office{
+
+    #main-office {
         position: relative;
     }
-    #main-office div:nth-child(3){
-        position: absolute;
-        right: 0px;
-        bottom: 50%;
-    }
-    #office-II{
-        position: relative;
-    }
-    #office-II div:nth-child(3){
+
+    #main-office div:nth-child(3) {
         position: absolute;
         right: 0px;
         bottom: 50%;
     }
 
-    #form-section{
+    #office-II {
+        position: relative;
+    }
+
+    #office-II div:nth-child(3) {
+        position: absolute;
+        right: 0px;
+        bottom: 50%;
+    }
+
+    #form-section {
         flex-direction: column;
         gap: 80px;
         margin-left: var(--left-and-right-body-gutter);
         margin-right: var(--left-and-right-body-gutter);
     }
-    #form-section br{
+
+    #form-section br {
         display: none;
     }
-    .form-section-right-div{
+
+    .form-section-right-div {
         width: 100%;
     }
-    .last button{
+
+    .last button {
         position: static;
     }
-    #main-office{
+
+    #main-office {
         margin-bottom: 50px;
     }
-    #main-office div:nth-child(2){
+
+    #main-office div:nth-child(2) {
         margin-bottom: 50px;
     }
-    #main-office div:nth-child(3){
+
+    #main-office div:nth-child(3) {
         position: static;
     }
-    #office-II div:nth-child(2){
+
+    #office-II div:nth-child(2) {
         margin-bottom: 50px;
     }
-    #office-II div:nth-child(3){
+
+    #office-II div:nth-child(3) {
         position: static;
     }
-    
+
 
     /* this is the footer section ========================================================== */
 
@@ -850,6 +946,9 @@ footer {
     .footer-see-portfolio {
         margin-left: 0px;
         transform: none;
+        padding: 30px;
+        font-size: 17px !important;
+        align-items: end;
     }
 
 }
