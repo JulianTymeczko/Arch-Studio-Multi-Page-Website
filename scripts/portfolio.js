@@ -63,3 +63,14 @@ window.addEventListener('resize', function() {
         header.setAttribute("style", "background-image: url(./assets/home/desktop/dark-paramour-tower.jpg)")
     }
 });
+
+
+
+
+
+
+
+
+// this is for the x-overflow on the images above 500 px to remove the scrollar ==========
+
+
