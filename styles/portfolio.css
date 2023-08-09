@@ -407,7 +407,7 @@ footer {
         flex-direction: column;
         background-color: var(--very-light-grey);
         position: absolute;
-        top: 0px;
+        top: 125px;
         gap: 25px;
         --left-pixel-amount: 30px;
         left: var(--left-pixel-amount);
@@ -441,7 +441,12 @@ footer {
 
     /* this is the main section ---------------------------------------------------------------- */
 
-
+    main{
+        margin: 0;
+        padding-left: var(--left-and-right-body-gutter);
+        padding-right: var(--left-and-right-body-gutter);
+        background-color: white;
+    }
     
 
     .grid-container{
