@@ -294,8 +294,9 @@ main{
     margin-bottom: 25px;
     position: relative;
 }
-.jake-richards div:hover{
 
+.jake-richards div:hover{
+    background-image: url(../assets/about/desktop/dark-avatar-jake.jpg);
 }
 .thompson-smith div{
     background-image: url(../assets/about/desktop/avatar-thompson.jpg);
@@ -306,7 +307,9 @@ main{
     margin-bottom: 25px;
     position: relative;
 }
-
+.thompson-smith div:hover{
+    background-image: url(../assets/about/desktop/dark-avatar-thompson.jpg);
+}
 .jackson-rourke div{
     background-image: url(../assets/about/desktop/avatar-jackson.jpg);
     background-repeat: no-repeat;
@@ -316,7 +319,9 @@ main{
     margin-bottom: 25px;
     position: relative;
 }
-
+.jackson-rourke div:hover{
+    background-image: url(../assets/about/desktop/dark-avatar-jackson.jpg)
+}
 .maria-simpson div{
     background-image: url(../assets/about/desktop/avatar-maria.jpg);
     background-repeat: no-repeat;
@@ -326,7 +331,9 @@ main{
     margin-bottom: 25px;
     position: relative;
 }
-
+.maria-simpson div:hover{
+    background-image: url(../assets/about/desktop/dark-avatar-maria.jpg);
+}
 .the-leaders-right-div h1{
     font-size: var(--heading-sm-font-size);
     color: var(--very-dark-blue);
