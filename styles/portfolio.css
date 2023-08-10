@@ -109,9 +109,11 @@ nav a[href="../index.html"] {
 .mobile-navigation-list {
     display: none;
 }
-.mobile-navigation-list a{
+
+.mobile-navigation-list a {
     font-weight: bold;
 }
+
 nav a {
     font-size: var(--body-text-font-size);
     color: var(--medium-gray);
@@ -141,42 +143,44 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 30px;
-    
+
 }
 
 .item {
-    
-   
+
+
     padding: 450px 0px 0px 40px;
     text-decoration: none;
     height: 550px;
     /* Removes the default underline on anchor links */
-    
+
     /* Sets the text color for the anchor links */
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../assets/portfolio/desktop/image-seraph.jpg);
-  
+
 }
 
-.item div h1{
+.item div h1 {
     font-size: var(--heading-sm-font-size);
     color: var(--very-light-grey);
     margin-bottom: 5px;
-    
-   
-  
+
+
+
 }
-.item div h2{
+
+.item div h2 {
     font-size: var(--body-text-font-size);
     color: var(--light-grey);
     font-weight: 300;
-   
- 
+
+
 }
-.item:nth-child(1){
+
+.item:nth-child(1) {
     background-image: url(../assets/portfolio/desktop/image-seraph.jpg);
-    
+
 }
 
 
@@ -250,7 +254,7 @@ footer {
     flex-direction: row;
     align-items: center;
     transform: translateX(130px);
-    
+
 }
 
 .footer-see-portfolio:hover {
@@ -290,7 +294,7 @@ footer {
 
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
-    :root{
+    :root {
         --left-and-right-body-gutter: 10%;
     }
 
@@ -308,23 +312,24 @@ footer {
 
     .straight-line {
         width: 180px;
-       
+
     }
 
-    
-    
-    
+
+
+
     /* this is the main section ======================================================= */
-    .grid-container{
+    .grid-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .item{
+
+    .item {
         background-image: url(../assets/portfolio/tablet/image-228b.jpg);
         padding-top: 150px;
         height: 230px;
     }
 
-    
+
 
 
 
@@ -433,7 +438,7 @@ footer {
         display: none;
     }
 
-    nav a[href="../index.html"]{
+    nav a[href="../index.html"] {
         display: inline-block;
     }
 
@@ -442,37 +447,41 @@ footer {
 
     /* this is the main section ---------------------------------------------------------------- */
 
-    main{
+    main {
         margin: 0;
         padding-left: var(--left-and-right-body-gutter);
         padding-right: var(--left-and-right-body-gutter);
         background-color: white;
     }
-    
 
-    .grid-container{
+
+    .grid-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .item{
+
+    .item {
         background-image: url(../assets/portfolio/mobile/image-228b.jpg);
         padding-left: 0px;
         padding-top: 120px;
         height: 200px;
         overflow-x: scroll;
     }
+
     .item::-webkit-scrollbar {
-        display: none; 
-      }
-      
-    
-      .item{
+        display: none;
+    }
+
+
+    .item {
         scrollbar-width: none;
-      }
-    .item div{
+    }
+
+    .item div {
         white-space: nowrap;
         text-indent: 30px;
     }
-    .item div h1{
+
+    .item div h1 {
         font-size: 27px;
     }
 
@@ -505,8 +514,8 @@ footer {
         margin-left: 0px;
         transform: none;
         padding: 30px;
-       font-size: 17px !important;
-       align-items: end;
+        font-size: 17px !important;
+        align-items: end;
     }
 
 }

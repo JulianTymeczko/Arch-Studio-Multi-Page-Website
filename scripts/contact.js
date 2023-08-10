@@ -56,7 +56,7 @@ window.addEventListener('resize', function() {
 
 // this is for the map ===============================================
 
-var map = L.map('map').setView([51.505, -0.09], 13);
+var map = L.map('map').setView([31.00, -100.00], 5);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -76,5 +76,51 @@ var customIcon2 = L.icon({
 
 
 
-var marker = L.marker([51.5, -0.09], { icon: customIcon }).addTo(map);
-var marker2 = L.marker([51.5, -0.08], { icon: customIcon2 }).addTo(map);
+var marker = L.marker([31.00, -100.00], { icon: customIcon }).addTo(map);
+var marker2 = L.marker([35.86, -86.66], { icon: customIcon2 }).addTo(map);
+
+
+
+
+// this is for the form of the page =============================================
+const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+let cantBeEmpty = document.querySelectorAll(".cant-be-empty")
+let nameInput = document.getElementById("name-input")
+let emailInput = document.getElementById("email-input")
+let messageInput = document.getElementById("message")
+let formButton = document.getElementById("form-button")
+formButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (nameInput.value == ""){
+        cantBeEmpty[0].style.display = "inline-block"
+        nameInput.classList.add("error-input")
+
+    }
+    else if (nameInput.value != ""){
+        cantBeEmpty[0].style.display = "none"
+        nameInput.classList.remove("error-input")
+    }
+    if (messageInput.value == ""){
+        cantBeEmpty[2].style.display = "inline-block"
+       messageInput.classList.add("error-input")
+    }
+    else if (messageInput.value != ""){
+        cantBeEmpty[2].style.display = "none"
+        messageInput.classList.remove("error-input")
+    }
+    if (emailInput.value == ""){
+        cantBeEmpty[1].style.display = "inline-block"
+        cantBeEmpty[1].textContent = "Can't be empty"
+        emailInput.classList.add("error-input")
+    }
+    
+    else if (!emailRegex.test(emailInput.value) && emailInput.value != ""){
+        cantBeEmpty[1].textContent = "Please use a valid email address"
+        cantBeEmpty[1].style.display = "inline-block"
+       emailInput.classList.add("error-input")
+    }
+    else if (emailRegex.test(emailInput.value) && emailInput.value != ""){
+        cantBeEmpty[1].style.display = "none"
+        emailInput.classList.remove("error-input")
+    }
+})
