@@ -549,8 +549,8 @@ this is the start of the media queries -----------------------------------------
     }
 
     .sideways-title {
-        left: -130px;
-        width: 350px;
+        left: -160px;
+        width: max-content;
         bottom: -40px;
         gap: 85px;
     }

@@ -54,3 +54,27 @@ window.addEventListener('resize', function() {
 });
 
 
+// this is for the map ===============================================
+
+var map = L.map('map').setView([51.505, -0.09], 13);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+var customIcon = L.icon({
+    iconUrl: '../assets/location.svg',
+    iconSize: [46, 56],
+    iconAnchor: [23, 56],
+});
+var customIcon2 = L.icon({
+    iconUrl: '../assets/location.svg',
+    iconSize: [46, 56],
+    iconAnchor: [23, 56],
+});
+
+
+
+var marker = L.marker([51.5, -0.09], { icon: customIcon }).addTo(map);
+var marker2 = L.marker([51.5, -0.08], { icon: customIcon2 }).addTo(map);

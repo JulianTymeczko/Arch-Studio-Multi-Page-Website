@@ -337,6 +337,7 @@ main {
 this is the map section in main --======================================================== */
 #map {
     margin-bottom: 150px;
+    height: 565px;
 }
 
 /* 
@@ -567,9 +568,9 @@ footer {
 
 
     .sideways-title {
-        left: -130px;
-        width: 350px;
-        bottom: -40px;
+        left: -200px;
+        width: max-content;
+        bottom: -90px;
         gap: 85px;
     }
 
@@ -867,6 +868,14 @@ footer {
         flex-direction: column;
         gap: 0px;
     }
+
+
+
+    #map{
+        height: 372px;
+    }
+
+
 
     #main-office {
         position: relative;

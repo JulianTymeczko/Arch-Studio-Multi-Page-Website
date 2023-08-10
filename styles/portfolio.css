@@ -295,9 +295,9 @@ footer {
     }
 
     .sideways-title {
-        left: -130px;
-        width: 350px;
-        bottom: -40px;
+        left: -230px;
+        width: max-content;
+        bottom: -120px;
         gap: 85px;
     }
 
@@ -308,6 +308,7 @@ footer {
 
     .straight-line {
         width: 180px;
+       
     }
 
     
@@ -459,6 +460,14 @@ footer {
         height: 200px;
         overflow-x: scroll;
     }
+    .item::-webkit-scrollbar {
+        display: none; 
+      }
+      
+    
+      .item{
+        scrollbar-width: none;
+      }
     .item div{
         white-space: nowrap;
         text-indent: 30px;

@@ -58,6 +58,5 @@ window.addEventListener('resize', function() {
 
 
 
-// this is for the x-overflow on the images above 500 px to remove the scrollar ==========
 
 
