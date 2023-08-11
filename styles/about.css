@@ -26,7 +26,7 @@
     --body-text-font-size: 18px;
     --body-text-line-spacing: 24px;
 
-    --left-and-right-body-gutter: 15%;
+    --left-and-right-body-gutter: 11%;
 }
 
 a{
@@ -226,7 +226,9 @@ main{
     margin-bottom: 150px;
 
 }
-
+.our-heritage-left-div{
+    padding-top: 50px;
+}
 #our-heritage div h1{
     font-size: var(--heading-med-font-size);
     line-height: var(--heading-med-line-spacing);
@@ -246,6 +248,7 @@ main{
     color: var(--dark-grey);
     font-size: var(--body-text-font-size);
     line-height: var(--body-text-line-spacing);
+    width: 75%;
 
 }
 
@@ -277,12 +280,12 @@ main{
 .linkedin{
     left: calc(50% - var(--position-difference));
 }
-.the-leaders-right-div > div:hover{
+.the-leaders-right-div > div > div:hover{
     
     cursor: pointer;
 
 }
-.the-leaders-right-div > div:hover a{
+.the-leaders-right-div > div > div:hover a{
     display: inline-block;
 }
 .jake-richards div{
@@ -443,8 +446,8 @@ footer {
 /* this is between tablet and desktop minor changes ======================================================== */
 @media screen and (min-width: 1440px) and (max-width: 1700px) {
     .sideways-title {
-        left: -120px;
-       
+        left: -170px;
+       bottom: -90px;
     }
    
 }
@@ -496,6 +499,7 @@ footer {
         flex-direction: column;
         align-items: center;
         position: relative;
+        margin-bottom: 200px;
     }
 
     #about-header {
@@ -504,7 +508,7 @@ footer {
         letter-spacing: 2px;
         width: max-content;
     }
-
+    
     .left-div-header {
         width: 100%;
         max-height: 750px;
@@ -537,6 +541,12 @@ footer {
 
     #our-heritage div:nth-child(2){
         display: none;
+    }
+    .our-heritage-left-div{
+        padding: 0;
+    }
+    #our-heritage div p{
+        width: 100%;
     }
     #the-leaders{
         flex-direction: column;
@@ -735,6 +745,12 @@ footer {
 
     #our-heritage div:nth-child(2){
         display: none;
+    }
+    #our-heritage div p{
+        width: 100%;
+    }
+    .our-heritage-left-div{
+        padding: 0;
     }
     #the-leaders{
         flex-direction: column;

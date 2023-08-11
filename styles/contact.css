@@ -26,7 +26,7 @@
     --body-text-font-size: 18px;
     --body-text-line-spacing: 24px;
 
-    --left-and-right-body-gutter: 15%;
+    --left-and-right-body-gutter: 11%;
 }
 
 a {
@@ -140,7 +140,7 @@ nav a:hover {
 /* this is the header section ================================================= */
 
 header {
-    margin: 0px var(--left-and-right-body-gutter) 100px var(--left-and-right-body-gutter);
+    margin: 0px var(--left-and-right-body-gutter) 200px var(--left-and-right-body-gutter);
     display: flex;
     flex-direction: row;
     position: relative;
@@ -554,7 +554,11 @@ footer {
 /* this is between tablet and desktop minor changes ======================================================== */
 @media screen and (min-width: 1440px) and (max-width: 1700px) {
     .sideways-title {
-        left: -120px;
+        left: -170px;
+       bottom: -60px;
+    }
+    .straight-line{
+        width: 200px;
     }
 }
 

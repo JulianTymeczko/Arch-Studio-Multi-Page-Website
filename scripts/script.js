@@ -125,6 +125,8 @@ mobileNavButton.addEventListener("click", function () {
 
 window.addEventListener('resize', function() {
     const windowWidth = window.innerWidth;
+    // const headerImg = header.style.backgroundImage
+    // console.log(headerImg)
     if (mobileNavigationList.style.display == "flex" && windowWidth >= 768){
         mobileNavigationList.style.display = "none"
         header.setAttribute("style", "background-image: url(./assets/home/tablet/dark-image-hero-paramour-tablet.jpg)")
