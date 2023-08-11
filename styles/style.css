@@ -395,6 +395,7 @@ main {
     position: absolute;
     right: -15px;
     top: 25px;
+    opacity: .60;
 }
 
 .featured-section-bottom-section-div div {
@@ -620,7 +621,7 @@ this is the start of the media queries -----------------------------------------
 
     .featured-section-bottom-section h1 {
         right: 25px;
-        opacity: .65;
+        
         font-size: 240px;
         top: 10px;
 
