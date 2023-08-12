@@ -149,18 +149,33 @@ main {
 .item {
 
 
-    padding: 450px 0px 0px 40px;
+   
     text-decoration: none;
     height: 550px;
-    /* Removes the default underline on anchor links */
-
-    /* Sets the text color for the anchor links */
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../assets/portfolio/desktop/image-seraph.jpg);
+  
 
 }
 
+.item::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0.00%, rgba(0, 0, 0, 0.30) 100%);
+}
+
+    
+
+.item div{
+    position: absolute;
+    top: 450px;
+    left: 40px;
+    z-index: 9;
+}
 .item div h1 {
     font-size: var(--heading-sm-font-size);
     color: var(--very-light-grey);
@@ -179,9 +194,54 @@ main {
 }
 
 .item:nth-child(1) {
-    background-image: url(../assets/portfolio/desktop/image-seraph.jpg);
+    background-image: url(../assets/portfolio/desktop/real-seraph-station.png);
 
 }
+.item:nth-child(2) {
+    background-image: url(../assets/portfolio/desktop/real-eebox-building.png);
+
+}
+.item:nth-child(3) {
+    background-image: url(../assets/portfolio/desktop/real-federal-tower.png);
+
+}
+.item:nth-child(4) {
+    background-image: url(../assets/portfolio/desktop/desl\ sol\ real.png);
+
+}
+.item:nth-child(5) {
+    background-image: url(../assets/portfolio/desktop/real-le-prototype.png);
+
+}
+.item:nth-child(6) {
+    background-image: url(../assets/portfolio/desktop/b-tower-real.png);
+
+}
+.item:nth-child(7) {
+    background-image: url(../assets/portfolio/desktop/real-hotel.png);
+
+}
+.item:nth-child(8) {
+    background-image: url(../assets/portfolio/desktop/real-netcry-tower.png);
+
+}
+.item:nth-child(9) {
+    background-image: url(../assets/portfolio/desktop/real-hypers.png);
+
+}
+.item:nth-child(10) {
+    background-image: url(../assets/portfolio/desktop/real-SXIV-tower.png);
+
+}
+.item:nth-child(11) {
+    background-image: url(../assets/portfolio/desktop/real-trinity-bank.png);
+
+}
+.item:nth-child(12) {
+    background-image: url(../assets/portfolio/desktop/real-paramour.png);
+
+}
+
 
 
 
@@ -326,10 +386,61 @@ footer {
 
     .item {
         background-image: url(../assets/portfolio/tablet/image-228b.jpg);
-        padding-top: 150px;
+        
         height: 230px;
     }
+    .item div{
+        top: 150px;
+    }
+    
+.item:nth-child(1) {
+    background-image: url(../assets/portfolio/tablet/real-tablet-seraph-station.jpg);
 
+}
+.item:nth-child(2) {
+    background-image: url(../assets/portfolio/tablet/real-tablet-eebox-building.jpg);
+
+}
+.item:nth-child(3) {
+    background-image: url(../assets/portfolio/tablet/real-tablet-federal-tower.jpg);
+
+}
+.item:nth-child(4) {
+    background-image: url(../assets/portfolio/tablet/real-tablet-del-sol.png);
+
+}
+.item:nth-child(5) {
+    background-image: url(../assets/portfolio/tablet/real-tablet-le-prototype.png);
+
+}
+.item:nth-child(6) {
+    background-image: url(../assets/portfolio/tablet/real-tablet-b-tower.png);
+
+}
+.item:nth-child(7) {
+    background-image: url(../assets/portfolio/tablet/real-tablet-hotel.jpg);
+
+}
+.item:nth-child(8) {
+    background-image: url(../assets/portfolio/tablet/real-tablet-netcry-tower.jpg);
+
+}
+.item:nth-child(9) {
+    background-image: url(../assets/portfolio/tablet/real-tablet-hypers.jpg);
+
+}
+.item:nth-child(10) {
+    background-image: url(../assets/portfolio/tablet/real-tablet-SXIV-tower.jpg);
+
+}
+.item:nth-child(11) {
+    background-image: url(../assets/portfolio/tablet/real-tablet-trinity-bank.jpg);
+
+}
+.item:nth-child(12) {
+    background-image: url(../assets/portfolio/tablet/real-tablet-paramour.jpg);
+
+}
 
 
 
@@ -463,8 +574,7 @@ footer {
 
     .item {
         background-image: url(../assets/portfolio/mobile/image-228b.jpg);
-        padding-left: 0px;
-        padding-top: 120px;
+       
         height: 200px;
         overflow-x: scroll;
     }
@@ -481,12 +591,63 @@ footer {
     .item div {
         white-space: nowrap;
         text-indent: 30px;
+        top: 120px;
+        left: 0;
     }
 
     .item div h1 {
         font-size: 27px;
     }
 
+        
+.item:nth-child(1) {
+    background-image: url(../assets/portfolio/mobile/real-mobile-seraph-station.png);
+
+}
+.item:nth-child(2) {
+    background-image: url(../assets/portfolio/mobile/real-mobile-eebox-building.jpg);
+
+}
+.item:nth-child(3) {
+    background-image: url(../assets/portfolio/mobile/real-mobile-federal-tower.jpg);
+
+}
+.item:nth-child(4) {
+    background-image: url(../assets/portfolio/mobile/real-mobile-del-sol.png);
+
+}
+.item:nth-child(5) {
+    background-image: url(../assets/portfolio/mobile/real-mobile-le-prototype.png);
+
+}
+.item:nth-child(6) {
+    background-image: url(../assets/portfolio/mobile/real-mobile-b-tower.png);
+
+}
+.item:nth-child(7) {
+    background-image: url(../assets/portfolio/mobile/real-mobile-hotel.jpg);
+
+}
+.item:nth-child(8) {
+    background-image: url(../assets/portfolio/mobile/real-mobile-netcry-tower.jpg);
+
+}
+.item:nth-child(9) {
+    background-image: url(../assets/portfolio/mobile/real-mobile-hypers.jpg);
+
+}
+.item:nth-child(10) {
+    background-image: url(../assets/portfolio/mobile/real-mobile-SXIV-tower.jpg);
+
+}
+.item:nth-child(11) {
+    background-image: url(../assets/portfolio/mobile/real-mobile-trinity-bank.jpg);
+
+}
+.item:nth-child(12) {
+    background-image: url(../assets/portfolio/mobile/real-mobile-paramour.jpg);
+
+}
 
     /* this is the footer section ========================================================== */
 
