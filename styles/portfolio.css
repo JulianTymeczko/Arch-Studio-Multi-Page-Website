@@ -165,7 +165,7 @@ main {
     height: 100%;
     top: 0px;
     position: absolute;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0.00%, rgba(0, 0, 0, 0.30) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0.00%, rgba(0, 0, 0, 0.35) 100%);
 }
 
     
@@ -240,6 +240,10 @@ main {
 .item:nth-child(12) {
     background-image: url(../assets/portfolio/desktop/real-paramour.png);
 
+}
+
+.item:hover{
+    filter: opacity(.60);
 }
 
 
@@ -385,7 +389,7 @@ footer {
     }
 
     .item {
-        background-image: url(../assets/portfolio/tablet/image-228b.jpg);
+        
         
         height: 230px;
     }
@@ -573,7 +577,7 @@ footer {
     }
 
     .item {
-        background-image: url(../assets/portfolio/mobile/image-228b.jpg);
+        
        
         height: 200px;
         overflow-x: scroll;
