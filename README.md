@@ -7,3 +7,4 @@ webpages that are fully responsive across all screen sizes.
 https://juliantymeczko.github.io/Arch-Studio-Multi-Page-Website/
 
 ## Screenshot of Application
+![arch studio screenshot](https://github.com/JulianTymeczko/Arch-Studio-Multi-Page-Website/assets/130944880/6d77e071-8408-4b94-93bf-3085ff647209)
