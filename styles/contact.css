@@ -151,10 +151,11 @@ header {
 #about-header {
     position: absolute;
     font-size: var(--heading-xl-font-size);
-    right: -80px;
+    right: 20px;
     top: 80px;
     color: var(--very-light-grey);
     z-index: 2;
+    text-shadow: -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, 1px 1px 1px #fff;
 }
 
 .left-div-header {
