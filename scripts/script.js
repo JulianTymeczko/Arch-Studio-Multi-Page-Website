@@ -54,7 +54,7 @@ buttonOne.addEventListener("click", function () {
     buttonFour.setAttribute("style", "background-color: white; color: hsl(223, 7%, 53%)")
     headerH1.innerHTML = "Project <br> Paramour"
     headerP.innerHTML = " Project made for an art museum near Southwest London. <br>Project Paramour is a statement of bold, modern <br> architecture."
-    header.setAttribute("style", "background-image: url(./assets/home/desktop/dark-paramour-tower.jpg)")
+    header.setAttribute("style", "background-image: url(./assets/home/desktop/real-paramour.png)")
 })
 
 
@@ -114,7 +114,7 @@ mobileNavButton.addEventListener("click", function () {
     }
     else if (mobileNavigationList.style.display == "flex") {
         mobileNavigationList.style.display = "none"
-        header.setAttribute("style", "background-image: url(./assets/home/mobile/dark-image-hero-paramour.jpg)")
+        header.setAttribute("style", "background-image: url(./assets/home/mobile/real-paramour-mobile.png)")
         headerA.setAttribute("style", "filter: brightness(100%);")
         headerP.setAttribute("style", "filter: brightness(100%);")
         enableScroll()
@@ -129,19 +129,19 @@ window.addEventListener('resize', function() {
     // console.log(headerImg)
     if (mobileNavigationList.style.display == "flex" && windowWidth >= 768){
         mobileNavigationList.style.display = "none"
-        header.setAttribute("style", "background-image: url(./assets/home/tablet/dark-image-hero-paramour-tablet.jpg)")
+        header.setAttribute("style", "background-image: url(./assets/home/tablet/tablet-paramour-real.png)")
         headerA.setAttribute("style", "filter: brightness(100%);")
         headerP.setAttribute("style", "filter: brightness(100%);")
         enableScroll()
     }
     else if (windowWidth >= 768){
-        header.setAttribute("style", "background-image: url(./assets/home/tablet/dark-image-hero-paramour-tablet.jpg)")
+        header.setAttribute("style", "background-image: url(./assets/home/tablet/tablet-paramour-real.png)")
     }
     if (windowWidth < 768 && mobileNavigationList.style.display == "none"){
-        header.setAttribute("style", "background-image: url(./assets/home/mobile/dark-image-hero-paramour.jpg)")
+        header.setAttribute("style", "background-image: url(./assets/home/mobile/real-paramour-mobile.png)")
     }
     if (windowWidth >= 1440){
-        header.setAttribute("style", "background-image: url(./assets/home/desktop/dark-paramour-tower.jpg)")
+        header.setAttribute("style", "background-image: url(./assets/home/desktop/real-paramour.png)")
     }
 });
 

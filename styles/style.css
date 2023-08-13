@@ -113,14 +113,14 @@ nav a:hover {
 
 
 header {
-    background-image: url(../assets/home/desktop/dark-paramour-tower.jpg);
+    background-image: url(../assets/home/desktop/real-paramour.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 100px;
     margin-left: var(--left-and-right-body-gutter);
     margin-right: var(--left-and-right-body-gutter);
-    height: 850px;
-    padding: 200px;
+    height: 800px;
+    
     position: relative;
 
 
@@ -128,6 +128,10 @@ header {
 
 .header-top-div {
     height: 100%;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: 9;
 }
 
 header div h1 {
@@ -169,7 +173,7 @@ header div a:hover {
     background-color: white;
     transform: translateX(calc(100% / 4 * -1));
     display: flex;
-
+    z-index: 50;
 }
 
 .header-bottom-div button {
@@ -189,7 +193,7 @@ header div a:hover {
 }
 
 .header-bottom-div button:hover {
-    cursor: pointer;
+    cursor: pointer ;
     background-color: var(--very-light-grey);
 
 }
@@ -599,12 +603,15 @@ this is the start of the media queries -----------------------------------------
     this is the header section ====================================================================== */
 
     header {
-        background-image: url(../assets/home/tablet/dark-image-hero-paramour-tablet.jpg);
-        padding: 11rem 0rem 0rem 4rem;
+        background-image: url(../assets/home/tablet/tablet-paramour-real.png);
+       
 
         height: 800px;
     }
-
+    .header-top-div{
+        top: 11rem;
+        left: 4rem;
+    }
     .header-bottom-div {
         display: none;
     }
@@ -812,9 +819,9 @@ this is the start of the media queries -----------------------------------------
     /* header section ============================================== */
 
     header {
-        padding: 0 var(--mobile-left-and-right-body-gutter);
+        
         height: 600px;
-        background-image: url(../assets/home/mobile/dark-image-hero-paramour.jpg);
+        background-image: url(../assets/home/mobile//real-paramour-mobile.png);
 
     }
 
@@ -822,6 +829,8 @@ this is the start of the media queries -----------------------------------------
         display: flex;
         flex-direction: column;
         justify-content: center;
+        top: 0;
+        left: var(--mobile-left-and-right-body-gutter);
     }
 
     header div h1 {
