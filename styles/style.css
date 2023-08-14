@@ -426,7 +426,7 @@ main {
     position: absolute;
     right: -15px;
     top: 25px;
-    opacity: .60;
+    opacity: .8;
 }
 
 .featured-section-bottom-section-div div {
@@ -440,6 +440,7 @@ main {
     font-size: var(--heading-sm-font-size);
     color: var(--very-light-grey);
     margin-bottom: 5px;
+    letter-spacing: 1px;
 }
 
 .featured-section-bottom-section a {
