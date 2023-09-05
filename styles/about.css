@@ -819,3 +819,19 @@ footer {
     }
 
 }
+
+
+
+/* this is for the animations appearing */
+
+.appear-animation {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 1s, transform 1s;
+  }
+  
+ 
+  .appear-animation.animate-class {
+    opacity: 1;
+    transform: translateY(0); 
+  }

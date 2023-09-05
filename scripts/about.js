@@ -52,3 +52,32 @@ window.addEventListener('resize', function() {
     }
   
 });
+
+
+
+
+// this is for animation making things appeear as you scroll
+
+const elementsToAnimate = document.querySelectorAll('.appear-animation');
+
+const observerOptions = {
+  root: null, 
+  rootMargin: '0px', 
+  threshold: 0.1, 
+};
+
+function handleIntersection(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      
+      entry.target.classList.add('animate-class');
+    } 
+  });
+}
+
+
+const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+elementsToAnimate.forEach((element) => {
+  observer.observe(element);
+});
